@@ -1,0 +1,35 @@
+{
+  "annal:view_fields": [
+    {
+      "annal:field_placement": "small:0,12;medium:0,6",
+      "annal:field_id": "Entity_id"
+    },
+    {
+      "annal:field_placement": "small:0,12;medium:6,6right",
+      "annal:field_id": "organization_role"
+    },
+    {
+      "annal:field_placement": "small:0,12",
+      "annal:field_id": "Name"
+    },
+    {
+      "annal:field_placement": "small:0,12",
+      "annal:field_id": "Entity_comment"
+    },
+    {
+      "annal:field_id": "link_role_r"
+    }
+  ],
+  "rdfs:label": "Description of organization",
+  "rdfs:comment": "Information about an organization associated with one or more events.",
+  "annal:add_field": "yes",
+  "annal:type_id": "_view",
+  "annal:record_type": "dmo:Organization",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_view/Organization_view/",
+  "annal:id": "Organization_view",
+  "@id": "./",
+  "@type": [
+    "annal:View"
+  ],
+  "annal:type": "annal:View"
+}

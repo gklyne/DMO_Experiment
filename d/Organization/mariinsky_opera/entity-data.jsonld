@@ -1,0 +1,20 @@
+{
+  "rdfs:label": "Mariinsky Opera",
+  "rdfs:comment": "The Mariinsky Theatre is a historic theatre of opera and ballet in Saint Petersburg, Russia. Opened in 1860, it became the preeminent music theatre of late 19th century Russia, where many of the stage masterpieces of Tchaikovsky, Mussorgsky, and Rimsky-Korsakov received their premieres. Through most of the Soviet era, it was known as the Kirov Theatre. Today, the Mariinsky Theatre is home to the Mariinsky Ballet, Mariinsky Opera and Mariinsky Orchestra.",
+  "dmo:links": [
+    {
+      "dmo:link": "http://en.wikipedia.org/wiki/Mariinsky_Theatre",
+      "dmo:role": "wikipedia"
+    }
+  ],
+  "annal:type_id": "Organization",
+  "dmo:organization_role": "",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Organization/mariinsky_opera/",
+  "annal:id": "mariinsky_opera",
+  "@id": "./",
+  "@type": [
+    "dmo:Organization",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

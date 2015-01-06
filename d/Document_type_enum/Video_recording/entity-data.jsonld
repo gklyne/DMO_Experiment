@@ -1,0 +1,13 @@
+{
+  "rdfs:label": "Video recording",
+  "rdfs:comment": "Video recording related to performance",
+  "annal:type_id": "Document_type_enum",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Document_type_enum/Video_recording/",
+  "annal:id": "Video_recording",
+  "@id": "./",
+  "@type": [
+    "dmo:Document_type_enum",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

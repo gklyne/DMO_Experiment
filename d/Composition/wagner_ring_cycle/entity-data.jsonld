@@ -1,0 +1,23 @@
+{
+  "rdfs:label": "Der Ring des Nibelungen (The Ring of the Nibelung)",
+  "rdfs:comment": "Der Ring des Nibelungen (The Ring of the Nibelung), is a cycle of four epic operas by the German composer Richard Wagner. The works are based loosely on characters from the Norse sagas and the Nibelungenlied. ",
+  "dmo:links": [
+    {
+      "dmo:link": "http://en.wikipedia.org/wiki/Der_Ring_des_Nibelungen",
+      "dmo:role": "wikipedia"
+    }
+  ],
+  "annal:type_id": "Composition",
+  "dmo:genre": "Classical, Opera",
+  "dmo:composition": "",
+  "dmo:part": "",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Composition/wagner_ring_cycle/",
+  "annal:id": "wagner_ring_cycle",
+  "@id": "./",
+  "@type": [
+    "dmo:Composition",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData",
+  "dmo:composer": "richard_wagner"
+}

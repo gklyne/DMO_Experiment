@@ -1,0 +1,15 @@
+{
+  "rdfs:label": "Performer",
+  "rdfs:comment": "Performer at an event",
+  "annal:type_id": "_type",
+  "annal:uri": "dmo:Performer",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_type/Performer/",
+  "annal:type_list": "Performer_list",
+  "annal:id": "Performer",
+  "@id": "./",
+  "@type": [
+    "annal:Type"
+  ],
+  "annal:type": "annal:Type",
+  "annal:type_view": "Performer_view"
+}

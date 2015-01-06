@@ -1,0 +1,13 @@
+{
+  "rdfs:label": "Score",
+  "rdfs:comment": "Musical score for performance",
+  "annal:type_id": "Document_type_enum",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Document_type_enum/Score/",
+  "annal:id": "Score",
+  "@id": "./",
+  "@type": [
+    "dmo:Document_type_enum",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

@@ -1,0 +1,15 @@
+{
+  "rdfs:label": "Document type",
+  "rdfs:comment": "Enumeration of types of document or resource relating to an event; e.g. Programme, Score, Audio, Video, Staging notes, Musicology notes, etc.",
+  "annal:type_id": "_type",
+  "annal:uri": "dmo:Document_type",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_type/Document_type/",
+  "annal:type_list": "Default_list",
+  "annal:id": "Document_type",
+  "@id": "./",
+  "@type": [
+    "annal:Type"
+  ],
+  "annal:type": "annal:Type",
+  "annal:type_view": "Default_view"
+}

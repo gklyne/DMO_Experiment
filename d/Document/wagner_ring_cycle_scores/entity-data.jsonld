@@ -1,0 +1,33 @@
+{
+  "rdfs:label": "Score for Wagner Ring Cycle",
+  "rdfs:comment": "Scores for Wagner Ring Cycle",
+  "dmo:document_type": "Score",
+  "dmo:links": [
+    {
+      "dmo:link": "http://imslp.org/wiki/Das_Rheingold,_WWV_86A_(Wagner,_Richard)",
+      "dmo:role": "Das Rheingold"
+    },
+    {
+      "dmo:link": "http://imslp.org/wiki/Die_Walk\u00fcre,_WWV_86B_(Wagner,_Richard)",
+      "dmo:role": "Die Walk\u00fcre"
+    },
+    {
+      "dmo:link": "http://imslp.org/wiki/Siegfried,_WWV_86C_(Wagner,_Richard)",
+      "dmo:role": "Siegfried"
+    },
+    {
+      "dmo:link": "http://imslp.org/wiki/G\u00f6tterd\u00e4mmerung,_WWV_86D_(Wagner,_Richard)",
+      "dmo:role": "G\u00f6tterd\u00e4mmerung"
+    }
+  ],
+  "annal:type_id": "Document",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Document/wagner_ring_cycle_scores/",
+  "dmo:performer_role": "",
+  "annal:id": "wagner_ring_cycle_scores",
+  "@id": "./",
+  "@type": [
+    "dmo:Document",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

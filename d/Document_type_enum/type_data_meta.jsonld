@@ -1,0 +1,10 @@
+{
+  "annal:type_id": "_entitytypedata",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Document_type_enum/",
+  "annal:id": "Document_type_enum",
+  "@id": "./",
+  "@type": [
+    "annal:Type_Data"
+  ],
+  "annal:type": "annal:Type_Data"
+}

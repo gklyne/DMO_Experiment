@@ -1,0 +1,21 @@
+{
+  "rdfs:label": "Willard White",
+  "rdfs:comment": "Sir Willard Wentworth White, OM, CBE (born 10 October 1946) is a Jamaican-born British operatic bass-baritone.",
+  "dmo:links": [
+    {
+      "dmo:link": "http://en.wikipedia.org/wiki/Willard_White",
+      "dmo:role": "wikipedia"
+    }
+  ],
+  "annal:type_id": "Performer",
+  "annal:missing_field": "",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Performer/willard_white/",
+  "dmo:performer_role": "Singer (bass)",
+  "annal:id": "willard_white",
+  "@id": "./",
+  "@type": [
+    "dmo:Performer",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

@@ -1,0 +1,20 @@
+{
+  "rdfs:label": "Mlada Khudoley",
+  "rdfs:comment": "Mlada Khudoley was born in Moscow. Soloist with the Mariinsky Opera since 1998.",
+  "dmo:links": [
+    {
+      "dmo:link": "http://www.mariinsky.ru/en/company/opera_women/hudoley1/",
+      "dmo:role": "Mariinski"
+    }
+  ],
+  "annal:type_id": "Performer",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Performer/mlada_khudoley/",
+  "dmo:performer_role": "Singer (soprano)",
+  "annal:id": "mlada_khudoley",
+  "@id": "./",
+  "@type": [
+    "dmo:Performer",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

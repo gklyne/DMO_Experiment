@@ -1,0 +1,31 @@
+{
+  "rdfs:label": "List of compositions",
+  "rdfs:comment": "List of compositions",
+  "annal:default_view": "Composition_view",
+  "annal:default_type": "Composition",
+  "annal:record_type": "dmo:Composition",
+  "annal:type_id": "_list",
+  "annal:list_entity_selector": "dmo:Composition in [@type]",
+  "annal:display_type": "List",
+  "annal:list_fields": [
+    {
+      "annal:field_placement": "small:0,3",
+      "annal:field_id": "Entity_id"
+    },
+    {
+      "annal:field_placement": "small:3,3",
+      "annal:field_id": "composer"
+    },
+    {
+      "annal:field_placement": "small:6,6",
+      "annal:field_id": "Name"
+    }
+  ],
+  "annal:url": "/annalist/c/DMO_Experiment/d/_list/Composition_list/",
+  "annal:id": "Composition_list",
+  "@id": "./",
+  "@type": [
+    "annal:List"
+  ],
+  "annal:type": "annal:List"
+}

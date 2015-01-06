@@ -1,0 +1,24 @@
+{
+  "rdfs:label": "Composition(s)",
+  "rdfs:comment": "Composition(s) associated with event",
+  "annal:group_ref": "composition_part",
+  "annal:type_id": "_field",
+  "annal:placeholder": "(compositions)",
+  "annal:property_uri": "dmo:compositions",
+  "annal:options_typeref": "",
+  "annal:field_entity_type": "",
+  "@id": "./",
+  "annal:repeat_label_delete": "Remove composition",
+  "annal:field_placement": "small:0,12",
+  "annal:repeat_label_add": "Add composition",
+  "annal:default_value": "",
+  "annal:field_value_type": "annal:Field_group",
+  "annal:field_render_type": "RepeatGroupRow",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_field/composition_r/",
+  "annal:restrict_values": "",
+  "annal:id": "composition_r",
+  "@type": [
+    "annal:Field"
+  ],
+  "annal:type": "annal:Field"
+}

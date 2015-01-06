@@ -1,0 +1,27 @@
+{
+  "annal:display_type": "List",
+  "rdfs:label": "List of performers",
+  "rdfs:comment": "List of performers",
+  "annal:default_view": "Performer_view",
+  "annal:default_type": "Performer",
+  "annal:type_id": "_list",
+  "annal:list_entity_selector": "dmo:Performer in [@type]",
+  "annal:record_type": "dmo:Performer",
+  "annal:list_fields": [
+    {
+      "annal:field_placement": "small:0,3",
+      "annal:field_id": "Entity_id"
+    },
+    {
+      "annal:field_placement": "small:3,9",
+      "annal:field_id": "Name"
+    }
+  ],
+  "annal:url": "/annalist/c/DMO_Experiment/d/_list/Performer_list/",
+  "annal:id": "Performer_list",
+  "@id": "./",
+  "@type": [
+    "annal:List"
+  ],
+  "annal:type": "annal:List"
+}

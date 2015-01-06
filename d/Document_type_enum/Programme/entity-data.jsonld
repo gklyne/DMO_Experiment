@@ -1,0 +1,13 @@
+{
+  "rdfs:label": "Programme",
+  "rdfs:comment": "Event programme",
+  "annal:type_id": "Document_type_enum",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Document_type_enum/Programme/",
+  "annal:id": "Programme",
+  "@id": "./",
+  "@type": [
+    "dmo:Document_type_enum",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

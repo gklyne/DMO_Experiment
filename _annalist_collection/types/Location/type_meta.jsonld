@@ -1,0 +1,15 @@
+{
+  "rdfs:label": "Event location",
+  "rdfs:comment": "Location of event",
+  "annal:type_id": "_type",
+  "annal:uri": "dmo:Location",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_type/Location/",
+  "annal:type_list": "Location_list",
+  "annal:id": "Location",
+  "@id": "./",
+  "@type": [
+    "annal:Type"
+  ],
+  "annal:type": "annal:Type",
+  "annal:type_view": "Location_view"
+}

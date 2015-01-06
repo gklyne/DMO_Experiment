@@ -1,0 +1,15 @@
+{
+  "rdfs:label": "Music-related event",
+  "rdfs:comment": "A music-related event, such as a performance or a public engagement activity associated with a piece of music and/or musician and/or composer, held at a given time and place.",
+  "annal:type_id": "_type",
+  "annal:uri": "dmo:Event",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_type/Event/",
+  "annal:type_list": "Event_list",
+  "annal:id": "Event",
+  "@id": "./",
+  "@type": [
+    "annal:Type"
+  ],
+  "annal:type": "annal:Type",
+  "annal:type_view": "Event_view"
+}

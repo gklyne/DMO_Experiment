@@ -1,0 +1,13 @@
+{
+  "rdfs:label": "Audio recording",
+  "rdfs:comment": "Audio recording related to performance",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Document_type_enum/Audio_recording/",
+  "annal:type_id": "Document_type_enum",
+  "annal:id": "Audio_recording",
+  "@id": "./",
+  "@type": [
+    "dmo:Document_type_enum",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

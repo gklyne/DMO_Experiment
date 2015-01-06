@@ -1,0 +1,24 @@
+{
+  "rdfs:label": "Performer",
+  "rdfs:comment": "Details about a performer associated with one or more events",
+  "annal:group_ref": "",
+  "annal:type_id": "_field",
+  "annal:placeholder": "(performer)",
+  "annal:property_uri": "dmo:performer",
+  "annal:options_typeref": "Performer",
+  "annal:field_entity_type": "",
+  "@id": "./",
+  "annal:repeat_label_delete": "",
+  "annal:field_placement": "small:0,6",
+  "annal:repeat_label_add": "",
+  "annal:default_value": "",
+  "annal:field_value_type": "dmo:Performer",
+  "annal:field_render_type": "Enum_optional",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_field/performer/",
+  "annal:restrict_values": "",
+  "annal:id": "performer",
+  "@type": [
+    "annal:Field"
+  ],
+  "annal:type": "annal:Field"
+}

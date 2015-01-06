@@ -1,0 +1,21 @@
+{
+  "rdfs:label": "Wilhelm Richard Wagner",
+  "rdfs:comment": "Wilhelm Richard Wagner; 22 May 1813 \u2013 13 February 1883) was a German composer, theatre director, polemicist, and conductor who is primarily known for his operas.",
+  "dmo:links": [
+    {
+      "dmo:link": "http://en.wikipedia.org/wiki/Richard_Wagner",
+      "dmo:role": "wikipedia"
+    }
+  ],
+  "annal:type_id": "Composer",
+  "annal:missing_field": "",
+  "dmo:genre": "Classical, Opera",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Composer/richard_wagner/",
+  "annal:id": "richard_wagner",
+  "@id": "./",
+  "@type": [
+    "dmo:Composer",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

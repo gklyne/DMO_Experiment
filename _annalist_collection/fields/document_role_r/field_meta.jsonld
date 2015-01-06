@@ -1,0 +1,24 @@
+{
+  "rdfs:label": "Documentary resources",
+  "rdfs:comment": "Documentary resources associated with event",
+  "annal:group_ref": "document_type",
+  "annal:type_id": "_field",
+  "annal:placeholder": "(documentary resources)",
+  "annal:property_uri": "dmo:documents",
+  "annal:options_typeref": "",
+  "annal:field_entity_type": "",
+  "@id": "./",
+  "annal:repeat_label_delete": "Remove document",
+  "annal:field_placement": "small:0,12",
+  "annal:repeat_label_add": "Add document",
+  "annal:default_value": "",
+  "annal:field_value_type": "annal:Field_group",
+  "annal:field_render_type": "RepeatGroupRow",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_field/document_role_r/",
+  "annal:restrict_values": "",
+  "annal:id": "document_role_r",
+  "@type": [
+    "annal:Field"
+  ],
+  "annal:type": "annal:Field"
+}

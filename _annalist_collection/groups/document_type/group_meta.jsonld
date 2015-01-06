@@ -1,0 +1,23 @@
+{
+  "rdfs:label": "Document + type",
+  "rdfs:comment": "A document or record associated with an event, and its type.",
+  "annal:type_id": "_group",
+  "annal:record_type": "dmo:Event",
+  "annal:group_fields": [
+    {
+      "annal:field_placement": "small:0,6",
+      "annal:field_id": "Document_type_field"
+    },
+    {
+      "annal:field_placement": "small:6,6",
+      "annal:field_id": "document"
+    }
+  ],
+  "annal:url": "/annalist/c/DMO_Experiment/d/_group/document_type/",
+  "annal:id": "document_type",
+  "@id": "./",
+  "@type": [
+    "annal:Field_group"
+  ],
+  "annal:type": "annal:Field_group"
+}

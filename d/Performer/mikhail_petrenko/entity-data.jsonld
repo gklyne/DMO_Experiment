@@ -1,0 +1,20 @@
+{
+  "rdfs:label": "Mikhail Petrenko",
+  "rdfs:comment": "Born in Leningrad. While still a student at the St Petersburg Conservatoire he was invited to join the Mariinsky Academy of young Singers. Made his debut at the Mariinsky Theatre in Prokofiev\u2019s opera Semyon Kotko, and since 1998 has been a soloist with the Opera Company.",
+  "dmo:links": [
+    {
+      "dmo:link": "http://www.mariinsky.ru/en/company/opera/troupe/bass/petrenko/",
+      "dmo:role": "Mariinsky"
+    }
+  ],
+  "annal:type_id": "Performer",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Performer/mikhail_petrenko/",
+  "dmo:performer_role": "Singer (bass)",
+  "annal:id": "mikhail_petrenko",
+  "@id": "./",
+  "@type": [
+    "dmo:Performer",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

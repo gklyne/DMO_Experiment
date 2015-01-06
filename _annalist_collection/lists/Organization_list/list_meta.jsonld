@@ -1,0 +1,27 @@
+{
+  "rdfs:label": "List of organizations",
+  "rdfs:comment": "List of organizations",
+  "annal:default_view": "Organization_view",
+  "annal:default_type": "Organization",
+  "annal:record_type": "dmo:Organization",
+  "annal:type_id": "_list",
+  "annal:list_entity_selector": "dmo:Organization in [@type]",
+  "annal:display_type": "List",
+  "annal:list_fields": [
+    {
+      "annal:field_placement": "small:0,3",
+      "annal:field_id": "Entity_id"
+    },
+    {
+      "annal:field_placement": "small:3,9",
+      "annal:field_id": "Name"
+    }
+  ],
+  "annal:url": "/annalist/c/DMO_Experiment/d/_list/Organization_list/",
+  "annal:id": "Organization_list",
+  "@id": "./",
+  "@type": [
+    "annal:List"
+  ],
+  "annal:type": "annal:List"
+}

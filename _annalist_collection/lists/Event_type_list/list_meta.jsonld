@@ -1,0 +1,27 @@
+{
+  "rdfs:label": "List of event types",
+  "rdfs:comment": "List of event types",
+  "annal:default_view": "Default_view",
+  "annal:default_type": "Event_type_enum",
+  "annal:record_type": "dmo:Event_type_enum",
+  "annal:type_id": "_list",
+  "annal:list_entity_selector": "dmo:Event_type_enum in [@type]",
+  "annal:display_type": "List",
+  "annal:list_fields": [
+    {
+      "annal:field_placement": "small:0,3",
+      "annal:field_id": "Entity_id"
+    },
+    {
+      "annal:field_placement": "small:3,9",
+      "annal:field_id": "Entity_label"
+    }
+  ],
+  "annal:url": "/annalist/c/DMO_Experiment/d/_list/Event_type_list/",
+  "annal:id": "Event_type_list",
+  "@id": "./",
+  "@type": [
+    "annal:List"
+  ],
+  "annal:type": "annal:List"
+}

@@ -1,0 +1,28 @@
+{
+  "rdfs:label": "Birmingham Hippodrome",
+  "rdfs:comment": "The Birmingham Hippodrome is a theatre situated on Hurst Street in the Chinese Quarter of Birmingham, England.\r\n\r\nAlthough best known as the home stage of the Birmingham Royal Ballet, it also hosts a wide variety of other performances including visiting opera and ballet companies, touring West End shows, pantomime and drama.",
+  "dmo:location_type": "Theatre",
+  "dmo:links": [
+    {
+      "dmo:link": "http://en.wikipedia.org/wiki/Birmingham_Hippodrome",
+      "dmo:role": "wikipedia"
+    },
+    {
+      "dmo:link": "http://www.birminghamhippodrome.com",
+      "dmo:role": "home page"
+    },
+    {
+      "dmo:link": "https://www.google.co.uk/maps/place/Birmingham+Hippodrome",
+      "dmo:role": "map"
+    }
+  ],
+  "annal:type_id": "Location",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Location/birmingham_hippodrome/",
+  "annal:id": "birmingham_hippodrome",
+  "@id": "./",
+  "@type": [
+    "dmo:Location",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

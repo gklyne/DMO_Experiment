@@ -1,0 +1,52 @@
+{
+  "annal:view_fields": [
+    {
+      "annal:field_id": "Entity_id",
+      "annal:field_placement": "small:0,6"
+    },
+    {
+      "annal:field_placement": "small:0,12",
+      "annal:field_id": "Entity_label"
+    },
+    {
+      "annal:field_placement": "small:0,12",
+      "annal:field_id": "Entity_comment"
+    },
+    {
+      "annal:field_id": "Event_start_field"
+    },
+    {
+      "annal:field_id": "Event_end_field"
+    },
+    {
+      "annal:field_id": "Event_location_field"
+    },
+    {
+      "annal:field_id": "event_composition_r"
+    },
+    {
+      "annal:field_id": "performer_role_r"
+    },
+    {
+      "annal:field_id": "organization_role_r"
+    },
+    {
+      "annal:field_id": "document_role_r"
+    },
+    {
+      "annal:field_id": "link_role_r"
+    }
+ ],
+  "rdfs:label": "Event view",
+  "rdfs:comment": "View of a musical event",
+  "annal:add_field": "yes",
+  "annal:type_id": "_view",
+  "annal:record_type": "dmo:Event",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_view/Event_view/",
+  "annal:id": "Event_view",
+  "@id": "./",
+  "@type": [
+    "annal:View"
+  ],
+  "annal:type": "annal:View"
+}

@@ -1,0 +1,23 @@
+{
+  "rdfs:label": "Performer + role",
+  "rdfs:comment": "A performer associated with an event, and a description of their role with respect to the event.",
+  "annal:type_id": "_group",
+  "annal:record_type": "dmo:Event",
+  "annal:group_fields": [
+    {
+      "annal:field_placement": "small:0,6",
+      "annal:field_id": "role"
+    },
+    {
+      "annal:field_placement": "small:6,6",
+      "annal:field_id": "performer"
+    }
+  ],
+  "annal:url": "/annalist/c/DMO_Experiment/d/_group/performer_role/",
+  "annal:id": "performer_role",
+  "@id": "./",
+  "@type": [
+    "annal:Field_group"
+  ],
+  "annal:type": "annal:Field_group"
+}

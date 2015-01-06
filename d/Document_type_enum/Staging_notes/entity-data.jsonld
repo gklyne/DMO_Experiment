@@ -1,0 +1,13 @@
+{
+  "rdfs:label": "Staging notes",
+  "rdfs:comment": "Staging notes for performance",
+  "annal:type_id": "Document_type_enum",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Document_type_enum/Staging_notes/",
+  "annal:id": "Staging_notes",
+  "@id": "./",
+  "@type": [
+    "dmo:Document_type_enum",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

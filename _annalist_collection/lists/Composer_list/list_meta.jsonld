@@ -1,0 +1,27 @@
+{
+  "rdfs:label": "List of composers",
+  "rdfs:comment": "List of composers",
+  "annal:default_view": "Composer_view",
+  "annal:default_type": "Composer",
+  "annal:record_type": "dmo:Composer",
+  "annal:type_id": "_list",
+  "annal:list_entity_selector": "dmo:Composer in [@type]",
+  "annal:display_type": "List",
+  "annal:list_fields": [
+    {
+      "annal:field_placement": "small:0,3",
+      "annal:field_id": "Entity_id"
+    },
+    {
+      "annal:field_placement": "small:3,9",
+      "annal:field_id": "Name"
+    }
+  ],
+  "annal:url": "/annalist/c/DMO_Experiment/d/_list/Composer_list/",
+  "annal:id": "Composer_list",
+  "@id": "./",
+  "@type": [
+    "annal:List"
+  ],
+  "annal:type": "annal:List"
+}

@@ -1,0 +1,24 @@
+{
+  "rdfs:label": "Organizations",
+  "rdfs:comment": "Organizations associated with event",
+  "annal:group_ref": "organization_role",
+  "annal:type_id": "_field",
+  "annal:placeholder": "(organizations)",
+  "annal:property_uri": "dmo:organizations",
+  "annal:options_typeref": "",
+  "annal:field_entity_type": "",
+  "@id": "./",
+  "annal:repeat_label_delete": "Remove organization",
+  "annal:field_placement": "small:0,12",
+  "annal:repeat_label_add": "Add organization",
+  "annal:default_value": "",
+  "annal:field_value_type": "annal:Field_group",
+  "annal:field_render_type": "RepeatGroupRow",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_field/organization_role_r/",
+  "annal:restrict_values": "",
+  "annal:id": "organization_role_r",
+  "@type": [
+    "annal:Field"
+  ],
+  "annal:type": "annal:Field"
+}

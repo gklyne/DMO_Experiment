@@ -1,0 +1,13 @@
+{
+  "rdfs:label": "Musicological notes",
+  "rdfs:comment": "Musicological notes for performed work",
+  "annal:type_id": "Document_type_enum",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Document_type_enum/Musicological_notes/",
+  "annal:id": "Musicological_notes",
+  "@id": "./",
+  "@type": [
+    "dmo:Document_type_enum",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData"
+}

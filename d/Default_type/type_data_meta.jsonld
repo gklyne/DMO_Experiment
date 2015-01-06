@@ -1,0 +1,10 @@
+{
+  "annal:type_id": "_entitytypedata",
+  "annal:url": "/annalist/c/TransformingMusicology/d/Default_type/",
+  "annal:id": "Default_type",
+  "@id": "./",
+  "@type": [
+    "annal:Type_Data"
+  ],
+  "annal:type": "annal:Type_Data"
+}

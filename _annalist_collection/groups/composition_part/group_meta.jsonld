@@ -1,0 +1,19 @@
+{
+  "rdfs:label": "Composition + relation to whole",
+  "rdfs:comment": "References a composition that is part of some larger work, and its relation to the larger work.",
+  "annal:type_id": "_group",
+  "annal:record_type": "dmo:Event",
+  "annal:group_fields": [
+    {
+      "annal:field_placement": "small:0,6",
+      "annal:field_id": "composition"
+    }
+  ],
+  "annal:url": "/annalist/c/DMO_Experiment/d/_group/composition_part/",
+  "annal:id": "composition_part",
+  "@id": "./",
+  "@type": [
+    "annal:Field_group"
+  ],
+  "annal:type": "annal:Field_group"
+}
