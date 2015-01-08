@@ -17,7 +17,8 @@
       "annal:field_id": "Entity_comment"
     },
     {
-      "annal:field_id": "link_role_field"
+      "annal:field_placement": "small:0,12;medium:0,6",
+      "annal:field_id": "link_role_r"
     }
   ],
   "rdfs:label": "Description of location",

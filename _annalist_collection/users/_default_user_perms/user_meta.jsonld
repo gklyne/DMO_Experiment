@@ -1,0 +1,17 @@
+{
+  "rdfs:label": "Default permissions",
+  "rdfs:comment": "Default permissions for authenticated user.",
+  "annal:user_uri": "annal:User/_default_user_perms",
+  "annal:type_id": "_user",
+  "annal:url": "/annalist/c/DMO_Experiment/d/_user/_default_user_perms/",
+  "annal:user_permissions": [
+    "VIEW",
+    "UPDATE"
+  ],
+  "annal:id": "_default_user_perms",
+  "@id": "./",
+  "@type": [
+    "annal:User"
+  ],
+  "annal:type": "annal:User"
+}
