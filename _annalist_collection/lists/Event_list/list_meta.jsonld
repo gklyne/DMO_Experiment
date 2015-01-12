@@ -13,8 +13,12 @@
       "annal:field_id": "Entity_id"
     },
     {
-      "annal:field_placement": "small:3,9",
+      "annal:field_placement": "small:3,6",
       "annal:field_id": "Entity_label"
+    },
+    {
+      "annal:field_placement": "small:9,3",
+      "annal:field_id": "Event_type_field"
     }
   ],
   "annal:url": "/annalist/c/DMO_Experiment/d/_list/Event_list/",
