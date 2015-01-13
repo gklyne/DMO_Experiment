@@ -1,0 +1,74 @@
+{
+  "rdfs:label": "Das Rheingold, Birmingham, 5 November 2014",
+  "rdfs:comment": "First opera of the The Wagner Ring Cycle performed at the Birmingham Hippodrome, conducted by Valery Gergiev.",
+  "dmo:links": [
+    {
+      "dmo:link": "http://www.birminghamhippodrome.com/WhatsOn_focus.asp?showId=1817",
+      "dmo:role": "Festival web site"
+    },
+    {
+      "dmo:link": "http://www.birminghamhippodrome.com/WhatsOn_focus.asp?showId=1820",
+      "dmo:role": "Performance web page"
+    }
+  ],
+  "annal:type_id": "Event",
+  "@id": "./",
+  "dmo:organizations": [
+    {
+      "dmo:organization": "mariinsky_opera",
+      "dmo:organization_role": "Opera company"
+    }
+  ],
+  "dmo:compositions": [
+    {
+      "dmo:composition": "wagner_ring_cycle"
+    }
+  ],
+  "dmo:documents": [
+    {
+      "dmo:document": "wagner_ring_cycle_scores",
+      "annal:missing_field": "Musical scores"
+    }
+  ],
+  "dmo:event_starts": "2014-11-05",
+  "dmo:performers": [
+    {
+      "dmo:performer": "valery_gergiev",
+      "dmo:role": "Conductor"
+    },
+    {
+      "dmo:performer": "willard_white",
+      "dmo:role": "Bass"
+    },
+    {
+      "dmo:performer": "ekaterina_gubanova",
+      "dmo:role": "Mezzo-soprano"
+    },
+    {
+      "dmo:performer": "andreas_schager",
+      "dmo:role": "Tenor(?)"
+    },
+    {
+      "dmo:performer": "vitaly_kovalyov"
+    },
+    {
+      "dmo:performer": "mikhail_petrenko",
+      "dmo:role": "Bass"
+    },
+    {
+      "dmo:performer": "mlada_khudoley",
+      "dmo:role": "Soprano"
+    }
+  ],
+  "dmo:event_type": "Performance",
+  "dmo:event_ends": "2014-11-05",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Event/2014_11_05_das_rheingold/",
+  "dmo:part_of_event": "2014_11_ring_cycle",
+  "annal:id": "2014_11_05_das_rheingold",
+  "@type": [
+    "dmo:Event",
+    "annal:EntityData"
+  ],
+  "annal:type": "annal:EntityData",
+  "dmo:location": "birmingham_hippodrome"
+}
