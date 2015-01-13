@@ -1,14 +1,14 @@
 {
-  "rdfs:label": "Das Rheingold, Birmingham, 5 November 2014",
-  "rdfs:comment": "First opera of the The Wagner Ring Cycle performed at the Birmingham Hippodrome, conducted by Valery Gergiev.",
   "dmo:musician": "conducted by Valery Gergiev with his world-famous Mariinsky Opera and a stellar cast including Willard White, Ekaterina Gubanova, Andreas Schager, Vitaly Kovalyov, Mikhail Petrenko and Mlada Khudoley",
+  "rdfs:comment": "Second opera of the The Wagner Ring Cycle performed at the Birmingham Hippodrome, conducted by Valery Gergiev.\r\n\r\nThe world of gods, dwarves and giants gives way to a world of heroes: in the second\r\ninstalment of the Ring it is human emotion that takes centre stage.\r\n ",
+  "rdfs:label": "Die Walk\u00fcre, Birmingham, 6 November 2014",
   "dmo:links": [
     {
       "dmo:link": "http://www.birminghamhippodrome.com/WhatsOn_focus.asp?showId=1817",
       "dmo:role": "Festival web site"
     },
     {
-      "dmo:link": "http://www.birminghamhippodrome.com/WhatsOn_focus.asp?showId=1820",
+      "dmo:link": "http://www.birminghamhippodrome.com/WhatsOn_focus.asp?showId=1821",
       "dmo:role": "Performance web page"
     }
   ],
@@ -33,7 +33,7 @@
       "annal:missing_field": "Musical scores"
     }
   ],
-  "dmo:event_starts": "2014-11-05",
+  "dmo:event_starts": "2014-11-06",
   "dmo:performers": [
     {
       "dmo:performer": "valery_gergiev",
@@ -65,10 +65,10 @@
   ],
   "dmo:event_type": "Performance",
   "dmo:datetime": "2014-11-05 - 2014-11-09",
-  "dmo:event_ends": "2014-11-05",
-  "annal:url": "/annalist/c/DMO_Experiment/d/Event/2014_11_ring_cycle_das_rheingold/",
+  "dmo:event_ends": "2014-11-06",
+  "annal:url": "/annalist/c/DMO_Experiment/d/Event/2014_11_ring_cycle_die_walkure/",
   "dmo:part_of_event": "2014_11_ring_cycle",
-  "annal:id": "2014_11_ring_cycle_das_rheingold",
+  "annal:id": "2014_11_ring_cycle_die_walkure",
   "dmo:composer": "Richard Wagner",
   "@type": [
     "dmo:Event",
