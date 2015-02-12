@@ -13,7 +13,7 @@
   "annal:repeat_label_add": "",
   "annal:default_value": "",
   "annal:field_value_type": "annal:Text",
-  "annal:field_render_type": "Text",
+  "annal:field_render_type": "URILink",
   "annal:url": "/annalist/c/DMO_Experiment/d/_field/link/",
   "annal:restrict_values": "",
   "annal:id": "link",

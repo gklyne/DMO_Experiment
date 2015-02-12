@@ -6,7 +6,7 @@
   "annal:placeholder": "(type of document)",
   "annal:property_uri": "dmo:document_type",
   "annal:options_typeref": "Document_type_enum",
-  "annal:field_entity_type": "dmo:Document",
+  "annal:field_entity_type": "",
   "@id": "./",
   "annal:repeat_label_delete": "",
   "annal:field_placement": "small:6,6",

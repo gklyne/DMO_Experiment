@@ -5,10 +5,12 @@
   "annal:record_type": "dmo:Event",
   "annal:group_fields": [
     {
+      "annal:property_uri": "",
       "annal:field_placement": "small:0,6",
-      "annal:field_id": "Document_type_field"
+      "annal:field_id": "document_type"
     },
     {
+      "annal:property_uri": "",
       "annal:field_placement": "small:6,6",
       "annal:field_id": "document"
     }

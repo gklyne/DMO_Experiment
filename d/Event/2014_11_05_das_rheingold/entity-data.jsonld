@@ -26,8 +26,8 @@
   ],
   "dmo:documents": [
     {
-      "dmo:document": "wagner_ring_cycle_scores",
-      "annal:missing_field": "Musical scores"
+      "dmo:document_type": "Score",
+      "dmo:document": "wagner_ring_cycle_scores"
     }
   ],
   "dmo:event_starts": "2014-11-05",
@@ -49,7 +49,8 @@
       "dmo:role": "Tenor(?)"
     },
     {
-      "dmo:performer": "vitaly_kovalyov"
+      "dmo:performer": "vitaly_kovalyov",
+      "dmo:role": ""
     },
     {
       "dmo:performer": "mikhail_petrenko",
