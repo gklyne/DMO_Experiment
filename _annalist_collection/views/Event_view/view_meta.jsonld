@@ -18,7 +18,7 @@
     {
       "annal:property_uri": "",
       "annal:field_placement": "small:0,12",
-      "annal:field_id": "Entity_comment"
+      "annal:field_id": "DMO_description"
     },
     {
       "annal:property_uri": "",
@@ -72,10 +72,11 @@
   "annal:type_id": "_view",
   "annal:record_type": "dmo:Event",
   "annal:url": "/annalist/c/DMO_Experiment/d/_view/Event_view/",
-  "annal:add_field": true,
+  "annal:open_view": true,
   "@id": "./",
   "@type": [
     "annal:View"
   ],
-  "annal:type": "annal:View"
+  "annal:type": "annal:View",
+  "annal:add_field": true
 }

@@ -1,7 +1,7 @@
 {
-  "dmo:musician": "conducted by Valery Gergiev with his world-famous Mariinsky Opera and a stellar cast including Willard White, Ekaterina Gubanova, Andreas Schager, Vitaly Kovalyov, Mikhail Petrenko and Mlada Khudoley",
-  "rdfs:comment": "The Wagner Ring Cycle performed at the Birmingham Hippodrome, conducted by Valery Gergiev.\r\n\r\nBirmingham Hippodrome will present Wagner's epic Ring Cycle conducted by Valery Gergiev with his world-famous Mariinsky Opera and a stellar cast including Willard White, Ekaterina Gubanova, Andreas Schager, Vitaly Kovalyov, Mikhail Petrenko and Mlada Khudoley. \r\n\r\nDAS RHEINGOLD Wednesday 5 November\r\nDIE WALK\u00dcRE Thursday 6 November\r\nSIEGFRIED Saturday 8 November\r\nG\u00d6TTERD\u00c4MMERUNG Sunday 9 November",
   "rdfs:label": "Wagner Ring Cycle, Birmingham, November 2014",
+  "rdfs:comment": "The Wagner Ring Cycle performed at the Birmingham Hippodrome, conducted by Valery Gergiev.\r\n\r\nBirmingham Hippodrome will present Wagner's epic Ring Cycle conducted by Valery Gergiev with his world-famous Mariinsky Opera and a stellar cast including Willard White, Ekaterina Gubanova, Andreas Schager, Vitaly Kovalyov, Mikhail Petrenko and Mlada Khudoley. \r\n\r\n1. DAS RHEINGOLD Wednesday 5 November\r\n2. DIE WALK\u00dcRE Thursday 6 November\r\n3. SIEGFRIED Saturday 8 November\r\n4. G\u00d6TTERD\u00c4MMERUNG Sunday 9 November",
+  "dmo:musician": "conducted by Valery Gergiev with his world-famous Mariinsky Opera and a stellar cast including Willard White, Ekaterina Gubanova, Andreas Schager, Vitaly Kovalyov, Mikhail Petrenko and Mlada Khudoley",
   "dmo:links": [
     {
       "dmo:link": "http://www.birminghamhippodrome.com/WhatsOn_focus.asp?showId=1817",
@@ -25,8 +25,8 @@
   ],
   "dmo:documents": [
     {
-      "dmo:document": "wagner_ring_cycle_scores",
-      "annal:missing_field": "Musical scores"
+      "dmo:document_type": "",
+      "dmo:document": "wagner_ring_cycle_scores"
     }
   ],
   "dmo:event_starts": "2014-11-05",
@@ -48,7 +48,8 @@
       "dmo:role": "Tenor(?)"
     },
     {
-      "dmo:performer": "vitaly_kovalyov"
+      "dmo:performer": "vitaly_kovalyov",
+      "dmo:role": ""
     },
     {
       "dmo:performer": "mikhail_petrenko",
@@ -63,6 +64,7 @@
   "dmo:datetime": "2014-11-05 - 2014-11-09",
   "dmo:event_ends": "2014-11-09",
   "annal:url": "/annalist/c/DMO_Experiment/d/Event/2014_11_ring_cycle/",
+  "dmo:part_of_event": "",
   "annal:id": "2014_11_ring_cycle",
   "dmo:composer": "Richard Wagner",
   "@type": [
