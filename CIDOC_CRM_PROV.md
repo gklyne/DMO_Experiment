@@ -117,20 +117,20 @@ Note, CIDOC CRM defines a number of intervening casses in the overall hierarchy:
 
 Properties describe relations between designated types of entities.  Complex paths are presented using a notation based on SPARQL property paths (http://www.w3.org/TR/sparql11-query/#propertypaths)
 
-PROV property               | CIDOC CRM encoding                                            | Comment
--------------               | ------------------                                            | -------
+PROV property               | CIDOC CRM encoding                                                | Comment
+-------------               | ------------------                                                | -------
 **Properties of `prov:Entity`** | | 
-'prov:wasDerivedFrom'       | `cidoc:P108i_was_produced_by/cidoc:P16_used_specific_object`  | Entity-to-entity derivation
-'prov:wasGeneratedBy'       | `cidoc:P108i_was_produced_by`                                 |
-'prov:wasAttributedTo'      | `cidoc:P108i_was_produced_by/prov:P14_carried_out_by`         | Entity-to-agent attribution
+'prov:wasDerivedFrom'       | `cidoc:P108i_was_produced_by` / `cidoc:P16_used_specific_object`  | Entity-to-entity derivation
+'prov:wasGeneratedBy'       | `cidoc:P108i_was_produced_by`                                     |
+'prov:wasAttributedTo'      | `cidoc:P108i_was_produced_by` / `prov:P14_carried_out_by`         | Entity-to-agent attribution
 **Properties of `prov:Activity`** | | 
-'prov:used'                 | `cidoc:P16_used_specific_object`                              |
-'prov:wasInformedBy'        | `cidoc:P16_used_specific_object/cidoc:P108i_was_produced_by`  | Activity-to-activity propagation (cf. `prov:wasDevivedFrom`)
-'prov:startedAtTime'        | `cidoc:P4_has_time-span`                                      | The `cidoc:E52_Time-Span` time-span encompases start and end times, and the methods for specificating it are quite open.  In previous implementation work, I've introduced additional properties of `cidoc:E52_Time-Span` taking ISO8601/RFC3999 literal values to define a period specifically, which can be used alongside (say) `cidoc:P78_is_identified_by`
-'prov:endedAtTime'          | `cidoc:P4_has_time-span`                                      | (see 'prov:startedAtTime')
-'prov:wasAssociatedWith'    | `prov:P14_carried_out_by`                                     |
+'prov:used'                 | `cidoc:P16_used_specific_object`                                  |
+'prov:wasInformedBy'        | `cidoc:P16_used_specific_object` / `cidoc:P108i_was_produced_by`  | Activity-to-activity propagation (cf. `prov:wasDevivedFrom`)
+'prov:startedAtTime'        | `cidoc:P4_has_time-span`                                          | The `cidoc:E52_Time-Span` time-span encompases start and end times, and the methods for specificating it are quite open.  In previous implementation work, I've introduced additional properties of `cidoc:E52_Time-Span` taking ISO8601/RFC3999 literal values to define a period specifically, which can be used alongside (say) `cidoc:P78_is_identified_by`
+'prov:endedAtTime'          | `cidoc:P4_has_time-span`                                          | (see 'prov:startedAtTime')
+'prov:wasAssociatedWith'    | `prov:P14_carried_out_by`                                         |
 **Properties of `prov:Agent`** | | 
-'prov:ActedOnBehalfOf'      |                                                               | Agent-to-agent delegation of responsibility.  I've not yet identified an easy way to capture this in CIDOC CRM.  I imagine one could create a delegation event that captures the delegation of responsibility with respect to some other designated activity.  Overall, CIDOC CRM seems to be weak on the representation of agency other than directly by a person of group of people.
+'prov:ActedOnBehalfOf'      |                                                                   | Agent-to-agent delegation of responsibility.  I've not yet identified an easy way to capture this in CIDOC CRM.  I imagine one could create a delegation event that captures the delegation of responsibility with respect to some other designated activity.  Overall, CIDOC CRM seems to be weak on the representation of agency other than directly by a person of group of people.
 
 
 # NOTES
