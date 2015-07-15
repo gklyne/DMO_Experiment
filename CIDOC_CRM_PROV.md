@@ -19,7 +19,7 @@ On a cursory examination of the use-cases, it appears to me that:
 
 * The Carolan Guitar is a cultural artifact, and recording its story will be facilitated by the relative richness of CIDOC CRM.
 * The CALMA data about computational analysis is appropriately recorded with W3C PROV provenance data
-* The performance data lies somewhere between: there are clear definitive facts about the performance (who, where, when), but also the performance itself has a cultural element and therer may be, for example, views about its curation and reception that are less definitive.
+* The performance data lies somewhere between: there are clear definitive facts about the performance (who, where, when), but also the performance itself has a cultural element and there may be, for example, views about its curation and reception that are less definitive.
 
 I believe that is important not to allow these different choices to result in provenance "silos" that cannot be connected, so this note is my initial attempt to sketch a way in which both CIDOC CRM and W3C PROV may be used freely, without losing information though use of different terms for common concepts (cf. "you like tomato...", https://www.youtube.com/watch?v=J2oEmPP5dTM - let's *not* call the whole thing off!). In this note, I aim to articulate points of contact between the different standards in a way that can be used to assist coverage of capture (using terms from either) and recovery of information.
 
@@ -85,7 +85,7 @@ PROV class      | CIDOC CRM class       | Comment
 ----------      | ---------------       | -------
 `prov:Entity`   | `cidoc:E70_Thing`     | Common sublasses used might be `cidoc:E22_Man-Made_Object` and `cidoc:E73_Information_Object`
 `prov:Activity` | `cidoc:E5_Event`      | `cidoc:E7_Activity` is subclass that further constrains to "actions intentionally carried out by instances of E39 Actor", which I would judge the appropriate mapping for a musical performance
-`prov:Agent`    | `cidoc:E39_Actor`     | The CIDOC CRM term here is specifically intended to refer to people, individuall or collectively.  I am not seeing an obvious candidate for software agents, which are also covered by the term `prov:Agent`:  `cidoc:E29_Design_or_Procedure might be applicable for this, but is discouraged by the qualification "in particular [...] deliberate human activities that may result in the modification or production of instances of E24 Physical Thing".  The term `cidoc:E73_Information_Object` could apply, but is not so specific.
+`prov:Agent`    | `cidoc:E39_Actor`     | The CIDOC CRM term here is specifically intended to refer to people, individuall or collectively.  I am not seeing an obvious candidate for software agents, which are also covered by the term `prov:Agent`:  `cidoc:E29_Design_or_Procedure` might be applicable for this, but is discouraged by the qualification "in particular [...] deliberate human activities that may result in the modification or production of instances of E24 Physical Thing".  The term `cidoc:E73_Information_Object` could apply, but is not so specific.
 
 Note, CIDOC CRM defines a number of intervening casses in the overall hierarchy:
 
@@ -119,21 +119,23 @@ Properties describe relations between designated types of entities.  Complex pat
 
 PROV property               | CIDOC CRM encoding                                            | Comment
 -------------               | ------------------                                            | -------
-Properties of `prov:Entity`
+**Properties of `prov:Entity`** | | 
 'prov:wasDerivedFrom'       | `cidoc:P108i_was_produced_by/cidoc:P16_used_specific_object`  | Entity-to-entity derivation
 'prov:wasGeneratedBy'       | `cidoc:P108i_was_produced_by`                                 |
 'prov:wasAttributedTo'      | `cidoc:P108i_was_produced_by/prov:P14_carried_out_by`         | Entity-to-agent attribution
-Properties of `prov:Activity`
+**Properties of `prov:Activity`** | | 
 'prov:used'                 | `cidoc:P16_used_specific_object`                              |
 'prov:wasInformedBy'        | `cidoc:P16_used_specific_object/cidoc:P108i_was_produced_by`  | Activity-to-activity propagation (cf. `prov:wasDevivedFrom`)
 'prov:startedAtTime'        | `cidoc:P4_has_time-span`                                      | The `cidoc:E52_Time-Span` time-span encompases start and end times, and the methods for specificating it are quite open.  In previous implementation work, I've introduced additional properties of `cidoc:E52_Time-Span` taking ISO8601/RFC3999 literal values to define a period specifically, which can be used alongside (say) `cidoc:P78_is_identified_by`
 'prov:endedAtTime'          | `cidoc:P4_has_time-span`                                      | (see 'prov:startedAtTime')
 'prov:wasAssociatedWith'    | `prov:P14_carried_out_by`                                     |
-Properties of `prov:Agent`
+**Properties of `prov:Agent`** | | 
 'prov:ActedOnBehalfOf'      |                                                               | Agent-to-agent delegation of responsibility.  I've not yet identified an easy way to capture this in CIDOC CRM.  I imagine one could create a delegation event that captures the delegation of responsibility with respect to some other designated activity.  Overall, CIDOC CRM seems to be weak on the representation of agency other than directly by a person of group of people.
 
 
-Erlangen bugs/oddities noted:
+# NOTES
+
+## Erlangen bugs/oddities noted:
 
 * P108 (URI has 'i', name does not)  (The CRM spec used to use different property names, e.g. P108_... and P108I_...)
 * E29 (typo after ISO)
