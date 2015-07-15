@@ -77,9 +77,9 @@ There are several additional classes and relations defined by PROV that are most
 @@ Same example as above, using PROV
 
 
-# Using CIDOC CRM alongside PROV
+## Using CIDOC CRM alongside PROV
 
-## Classes
+### Classes
 
 PROV class      | CIDOC CRM class       | Comment
 ----------      | ---------------       | -------
@@ -113,7 +113,7 @@ Note, CIDOC CRM defines a number of intervening casses in the overall hierarchy:
             * [cidoc:E74_Group](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor766224729)
 
 
-## Properties
+### Properties
 
 Properties describe relations between designated types of entities.  Complex paths are presented using a notation based on SPARQL property paths (http://www.w3.org/TR/sparql11-query/#propertypaths)
 
@@ -133,9 +133,9 @@ PROV property               | CIDOC CRM encoding                                
 'prov:ActedOnBehalfOf'      |                                                                   | Agent-to-agent delegation of responsibility.  I've not yet identified an easy way to capture this in CIDOC CRM.  I imagine one could create a delegation event that captures the delegation of responsibility with respect to some other designated activity.  Overall, CIDOC CRM seems to be weak on the representation of agency other than directly by a person of group of people.
 
 
-# NOTES
+## NOTES
 
-## Erlangen bugs/oddities noted:
+### Erlangen bugs/oddities noted:
 
 * P108 (URI has 'i', name does not)  (The CRM spec used to use different property names, e.g. P108_... and P108I_...)
 * E29 (typo after ISO)
