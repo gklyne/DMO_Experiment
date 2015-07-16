@@ -67,10 +67,12 @@ See:
 The goals of PROV are more modest than CRM, viz to capture details of the mechanisms whereby some artifact or information was derived.  It is built around a very small set of core concepts:
 
 * Entities: anything which can have an associated provenance description,
-* Activities: processes that consukme and create entities, and
+* Activities: processes that consume and create entities, and
 * Agents: people, software and other actors that control or guide the conduct of an activity
 
 ![PROV core structure](http://www.w3.org/TR/2013/REC-prov-o-20130430/diagrams/starting-points.svg)
+
+(Diagram from W3C PROV-O document, based on an illustration by Jun Zhao)
 
 There are several additional classes and relations defined by PROV that are mostly refinements of these core concepts, or structural elements used to help oirganize provenance descriptions.
 
