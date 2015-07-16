@@ -34,23 +34,23 @@ See also online CRM reference and primer:
 * http://erlangen-crm.org/docs/ecrm/current/
 * http://www.cidoc-crm.org/docs/CRMPrimer_v1.1.pdf
 
-CIDOC CRM data is substantially structured around and mediated by *events*.  Events are, in turn, associated with artifacts, people, places, time spans and more.  Using these concepts, the history of an artifact can be captured through a a series of events which contributed to its final being, which in turn may refer to other artifacts and people that contributed in various ways to the process.  The same framework can be used to relate an event to the things, people, places and more that contributed to its occurrence, and to further events, people and things that were influenced by that event.
+CIDOC CRM data is substantially structured around and mediated by *events*.  Events are, in turn, associated with artifacts, people, places, time spans and more.  Using these concepts, the history of an artifact can be captured through a series of events which contributed to its eventual being, which in turn may refer to other artifacts and people that contributed in various ways to the process.  The same framework can be used to relate an event to the things, people, places and more that contributed to its occurrence, and to further events, people and things that were influenced by that event.
 
 Key high-level concepts in CRM include:
 
-* E1 Entity
-    * E4 Period
-        * E5 Event
-            * E7 Activity
-    * E39 Actor 
-        * E21 Person
-    * E52 Time-Span
-    * E53 Place
-    * E70 Thing
-        * E24 Physical Man-Made Thing
-            * E22 Man-Made Object
-        * E28 Conceptual Object
-            * E73 Information object
+* [cidoc:E1_Entity](http://erlangen-crm.org/docs/ecrm/current/#anchor-2008326450)
+    * [cidoc:E4_Period](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-1061023960)
+        * [cidoc:E5_Event](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-680408142)
+            * [cidoc:E7_Activity](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-121262637)
+    * [cidoc:E39_Actor](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-1773481576)
+        * [cidoc:E21_Person](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor2037747319)
+    * [cidoc:E52_Time-Span](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-811589756)
+    * [cidoc:E53_Place](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor696186594)
+    * [cidoc:E70_Thing](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor1522879172)
+        * [cidoc:E24_Physical_Man-Made_Thing](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor1321167518)
+            * [cidoc:E22_Man-Made_Object](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-579380173)
+        * [cidoc:E28_Conceptual_Object](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-2048876791)
+            * [cidoc:E73_Information_Object](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-1946407753)
 
 (The choice of key concepts here is somewhat arbitrary, and loosely follows the spirit if not the letter of the CRM Core vocabulary element selection.  It is based in part of past experience of terms used to capture descriptions of cultural objects.  The online CRM reference can be used to navigate to related relations and concepts: these terms provide some entry points for exploring the richness of CIDOC CRM.)
 
