@@ -1,0 +1,117 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"B_:genid1" -> "Rprov:Association" [ label="rdf:type" ];
+	"B_:genid1" -> "Rex:Remi_Harris" [ label="prov:agent" ];
+	"B_:genid1" -> "Rex:Performer" [ label="prov:hadRole" ];
+	"B_:genid1" -> "Rex:Coquette_song" [ label="prov:hadPlan" ];
+	"Rex:Coquette_performance" -> "Rex:Performance" [ label="rdf:type" ];
+	"Rex:Coquette_performance" -> "Rprov:Activity" [ label="rdf:type" ];
+	"Rex:Coquette_performance" -> "Rex:Carolan_Guitar" [ label="prov:Used" ];
+	"Rex:Coquette_performance" -> "Rex:Remi_Harris" [ label="prov:wasAssociatedWith" ];
+	"Rex:Coquette_performance" -> "B_:genid1" [ label="prov:qualifiedAsscoiation" ];
+	"Rex:Coquette_performance" -> "Rhttp://carolanguitar.com/2014/11/10/31-coquette/" [ label="rdfs:seeAlso" ];
+	"Rex:Remi_Harris" -> "Rex:Guitarist" [ label="rdf:type" ];
+	"Rex:Remi_Harris" -> "Rprov:Person" [ label="rdf:type" ];
+	"Rex:Remi_Harris" -> "Rprov:Agent" [ label="rdf:type" ];
+	"Rex:Remi_Harris" -> "Rfoaf:Person" [ label="rdf:type" ];
+	"Rex:Remi_Harris" -> "LRemi Harris" [ label="foaf:name" ];
+	"Rex:Remi_Harris" -> "Rhttp://www.remiharris.co.uk" [ label="rdfs:seeAlso" ];
+	"Rex:Coquette_song" -> "Rprov:Plan" [ label="rdf:type" ];
+	"Rex:Coquette_song" -> "Rprov:Entity" [ label="rdf:type" ];
+	"Rex:Coquette_song" -> "LCoquette" [ label="rdfs:label" ];
+	"Rex:Coquette_song" -> "Rhttps://en.wikipedia.org/wiki/Coquette_(song)" [ label="rdfs:seeAlso" ];
+	"Rex:Carolan_Guitar" -> "Rex:Musical_instrument" [ label="rdf:type" ];
+	"Rex:Carolan_Guitar" -> "Rprov:Entity" [ label="rdf:type" ];
+	"Rex:Carolan_Guitar" -> "Rex:Carolan_Guitar_production" [ label="prov:wasGeneratedBy" ];
+	"Rex:Carolan_Guitar" -> "Rhttp://carolanguitar.com" [ label="rdfs:seeAlso" ];
+	"B_:genid2" -> "Rprov:Association" [ label="rdf:type" ];
+	"B_:genid2" -> "Rex:Nick_Perez" [ label="prov:agent" ];
+	"B_:genid2" -> "Rex:Luthier" [ label="prov:hadRole" ];
+	"B_:genid2" -> "Rex:Dreadnought_Guitar" [ label="prov:hadPlan" ];
+	"B_:genid2" -> "Rhttp://carolanguitar.com/2014/08/11/dread/" [ label="rdfs:seeAlso" ];
+	"Rex:Carolan_Guitar_production" -> "Rprov:Activity" [ label="rdf:type" ];
+	"Rex:Carolan_Guitar_production" -> "Rex:Nick_Perez" [ label="prov:wasAssociatedWith" ];
+	"Rex:Carolan_Guitar_production" -> "Rex:Steve_Benford" [ label="prov:wasAssociatedWith" ];
+	"Rex:Carolan_Guitar_production" -> "Rex:Reclaimed_Mahogany_pece" [ label="prov:used" ];
+	"Rex:Carolan_Guitar_production" -> "Rex:Flamed_Maple_piece" [ label="prov:used" ];
+	"Rex:Carolan_Guitar_production" -> "Rex:Spruce_piece" [ label="prov:used" ];
+	"Rex:Carolan_Guitar_production" -> "B_:genid2" [ label="prov:qualifiedAsscoiation" ];
+	"Rex:Nick_Perez" -> "Rex:Luthier" [ label="rdf:type" ];
+	"Rex:Nick_Perez" -> "Rex:Guitarist" [ label="rdf:type" ];
+	"Rex:Nick_Perez" -> "Rprov:Person" [ label="rdf:type" ];
+	"Rex:Nick_Perez" -> "Rprov:Agent" [ label="rdf:type" ];
+	"Rex:Nick_Perez" -> "Rfoaf:Person" [ label="rdf:type" ];
+	"Rex:Nick_Perez" -> "LNick Perez" [ label="foaf:name" ];
+	"Rex:Nick_Perez" -> "Rhttp://www.nperezguitars.com" [ label="rdfs:seeAlso" ];
+	"Rex:Steve_Benford" -> "Rex:Researcher" [ label="rdf:type" ];
+	"Rex:Steve_Benford" -> "Rex:Guitarist" [ label="rdf:type" ];
+	"Rex:Steve_Benford" -> "Rprov:Person" [ label="rdf:type" ];
+	"Rex:Steve_Benford" -> "Rprov:Agent" [ label="rdf:type" ];
+	"Rex:Steve_Benford" -> "Rfoaf:Person" [ label="rdf:type" ];
+	"Rex:Steve_Benford" -> "LSteve Benford" [ label="foaf:name" ];
+	"Rex:Steve_Benford" -> "Rhttps://www.nottingham.ac.uk/computerscience/people/steve.benford" [ label="rdfs:seeAlso" ];
+	"Rex:Performer" -> "Rprov:Role" [ label="rdf:type" ];
+	"Rex:Performer" -> "LPlayer in a music performance" [ label="rdfs:label" ];
+	"Rex:Luthier" -> "Rprov:Role" [ label="rdf:type" ];
+	"Rex:Luthier" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Rex:Luthier" -> "LGuitar maker" [ label="rdfs:label" ];
+	"Rex:Researcher" -> "Rprov:Role" [ label="rdf:type" ];
+	"Rex:Researcher" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Rex:Researcher" -> "LResearcher" [ label="rdfs:label" ];
+	"Rex:Guitarist" -> "Rprov:Role" [ label="rdf:type" ];
+	"Rex:Guitarist" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Rex:Guitarist" -> "LGuitarist" [ label="rdfs:label" ];
+
+	// Resources
+	"Rprov:Association" [ label="prov:Association", shape = ellipse, color = blue ];
+	"Rex:Remi_Harris" [ label="ex:Remi_Harris", shape = ellipse, color = blue ];
+	"Rex:Performer" [ label="ex:Performer", shape = ellipse, color = blue ];
+	"Rex:Coquette_song" [ label="ex:Coquette_song", shape = ellipse, color = blue ];
+	"Rex:Coquette_performance" [ label="ex:Coquette_performance", shape = ellipse, color = blue ];
+	"Rex:Performance" [ label="ex:Performance", shape = ellipse, color = blue ];
+	"Rprov:Activity" [ label="prov:Activity", shape = ellipse, color = blue ];
+	"Rex:Carolan_Guitar" [ label="ex:Carolan_Guitar", shape = ellipse, color = blue ];
+	"Rhttp://carolanguitar.com/2014/11/10/31-coquette/" [ label="http://carolanguitar.com/2014/11/10/31-coquette/", shape = ellipse, color = blue ];
+	"Rex:Guitarist" [ label="ex:Guitarist", shape = ellipse, color = blue ];
+	"Rprov:Person" [ label="prov:Person", shape = ellipse, color = blue ];
+	"Rprov:Agent" [ label="prov:Agent", shape = ellipse, color = blue ];
+	"Rfoaf:Person" [ label="foaf:Person", shape = ellipse, color = blue ];
+	"Rhttp://www.remiharris.co.uk" [ label="http://www.remiharris.co.uk", shape = ellipse, color = blue ];
+	"Rprov:Plan" [ label="prov:Plan", shape = ellipse, color = blue ];
+	"Rprov:Entity" [ label="prov:Entity", shape = ellipse, color = blue ];
+	"Rhttps://en.wikipedia.org/wiki/Coquette_(song)" [ label="https://en.wikipedia.org/wiki/Coquette_(song)", shape = ellipse, color = blue ];
+	"Rex:Musical_instrument" [ label="ex:Musical_instrument", shape = ellipse, color = blue ];
+	"Rex:Carolan_Guitar_production" [ label="ex:Carolan_Guitar_production", shape = ellipse, color = blue ];
+	"Rhttp://carolanguitar.com" [ label="http://carolanguitar.com", shape = ellipse, color = blue ];
+	"Rex:Nick_Perez" [ label="ex:Nick_Perez", shape = ellipse, color = blue ];
+	"Rex:Luthier" [ label="ex:Luthier", shape = ellipse, color = blue ];
+	"Rex:Dreadnought_Guitar" [ label="ex:Dreadnought_Guitar", shape = ellipse, color = blue ];
+	"Rhttp://carolanguitar.com/2014/08/11/dread/" [ label="http://carolanguitar.com/2014/08/11/dread/", shape = ellipse, color = blue ];
+	"Rex:Steve_Benford" [ label="ex:Steve_Benford", shape = ellipse, color = blue ];
+	"Rex:Reclaimed_Mahogany_pece" [ label="ex:Reclaimed_Mahogany_pece", shape = ellipse, color = blue ];
+	"Rex:Flamed_Maple_piece" [ label="ex:Flamed_Maple_piece", shape = ellipse, color = blue ];
+	"Rex:Spruce_piece" [ label="ex:Spruce_piece", shape = ellipse, color = blue ];
+	"Rhttp://www.nperezguitars.com" [ label="http://www.nperezguitars.com", shape = ellipse, color = blue ];
+	"Rex:Researcher" [ label="ex:Researcher", shape = ellipse, color = blue ];
+	"Rhttps://www.nottingham.ac.uk/computerscience/people/steve.benford" [ label="https://www.nottingham.ac.uk/computerscience/people/steve.benford", shape = ellipse, color = blue ];
+	"Rprov:Role" [ label="prov:Role", shape = ellipse, color = blue ];
+	"Rrdfs:Class" [ label="rdfs:Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+	"B_:genid1" [ label="", shape = circle, color = green ];
+	"B_:genid2" [ label="", shape = circle, color = green ];
+
+	// Literals
+	"LRemi Harris" [ label="Remi Harris", shape = record ];
+	"LCoquette" [ label="Coquette", shape = record ];
+	"LNick Perez" [ label="Nick Perez", shape = record ];
+	"LSteve Benford" [ label="Steve Benford", shape = record ];
+	"LPlayer in a music performance" [ label="Player in a music performance", shape = record ];
+	"LGuitar maker" [ label="Guitar maker", shape = record ];
+	"LResearcher" [ label="Researcher", shape = record ];
+	"LGuitarist" [ label="Guitarist", shape = record ];
+
+	label="\n\nModel:\n(Unknown)\n\nNamespaces:\nrdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\nrdfs: http://www.w3.org/2000/01/rdf-schema#\nprov: http://www.w3.org/ns/prov#\nfoaf: http://xmlns.com/foaf/0.1/\nex: http://vocab.example.org/\n";
+}

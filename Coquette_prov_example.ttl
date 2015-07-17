@@ -48,15 +48,24 @@
         foaf:name "Nick Perez" ;
         rdfs:seeAlso <http://www.nperezguitars.com> ;
         .
+    ex:Steve_Benford
+        a ex:Researcher, ex:Guitarist, prov:Person, prov:Agent, foaf:Person ;
+        foaf:name "Steve Benford" ;
+        rdfs:seeAlso <https://www.nottingham.ac.uk/computerscience/people/steve.benford> ;
+        .
     ex:Performer
         a prov:Role ;
-        rdfs:label "Player in a music performance"
-        .
-    ex:Guitarist
-        a prov:Role ;
-        rdfs:label "Guitarist"
+        rdfs:label "Player in a music performance" ;
         .
     ex:Luthier
         a prov:Role, rdfs:Class ;
-        rdfs:label "Guitar maker"
+        rdfs:label "Guitar maker" ;
+        .
+    ex:Researcher
+        a prov:Role, rdfs:Class ;
+        rdfs:label "Researcher" ;
+        .      
+    ex:Guitarist
+        a prov:Role, rdfs:Class ;
+        rdfs:label "Guitarist" ;
         .

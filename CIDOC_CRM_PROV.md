@@ -128,30 +128,36 @@ Example (using Turtle notation):
         foaf:name "Nick Perez" ;
         rdfs:seeAlso <http://www.nperezguitars.com> ;
         .
+    ex:Steve_Benford
+        a ex:Researcher, ex:Guitarist, prov:Person, prov:Agent, foaf:Person ;
+        foaf:name "Steve Benford" ;
+        rdfs:seeAlso <https://www.nottingham.ac.uk/computerscience/people/steve.benford> ;
+        .
     ex:Performer
         a prov:Role ;
-        rdfs:label "Player in a music performance"
-        .
-    ex:Guitarist
-        a prov:Role ;
-        rdfs:label "Guitarist"
+        rdfs:label "Player in a music performance" ;
         .
     ex:Luthier
         a prov:Role, rdfs:Class ;
-        rdfs:label "Guitar maker"
+        rdfs:label "Guitar maker" ;
+        .
+    ex:Researcher
+        a prov:Role, rdfs:Class ;
+        rdfs:label "Researcher" ;
+        .      
+    ex:Guitarist
+        a prov:Role, rdfs:Class ;
+        rdfs:label "Guitarist" ;
         .
 
-[(Graphical view)](https://rawgit.com/gklyne/DMO_Experiment/master/Coquette_prov_example.svg)
 
-<!--
-![Graphical view](https://raw.githubusercontent.com/gklyne/DMO_Experiment/master/Coquette_prov_example.svg)
--->
+![Graphical view](https://raw.githubusercontent.com/gklyne/DMO_Experiment/master/Coquette_prov_example.png)
+
+[(Graphical view in SVG)](https://rawgit.com/gklyne/DMO_Experiment/master/Coquette_prov_example.svg)
 
 Notes:
 
-* `ex:Luthier` used here as both `prov:Role` and `rdfs:Class`.  I think this is OK.
-
-
+* `ex:Guitarist` and `ex:Luthier` are used here as both `prov:Role` and `rdfs:Class`.  I think this is OK.
 
 
 ## Using CIDOC CRM alongside PROV
@@ -240,5 +246,9 @@ Erlangen university have created an OWL version of CIDOC CRM, with online hyperl
 ### Graphing RDF data
 
 * http://rhizomik.net/html/redefer/rdf2svg-form/
+* rapper -i turtle -o dot Coquette_prov_example.ttl | dot -Tpng -oCoquette_prov_example.png
+* rapper -i turtle -o dot Coquette_prov_example.ttl >Coquette_prov_example.dot
+* dot -Tpng -oCoquette_prov_example.png Coquette_prov_example.dot
+* dot -Tsvg -oCoquette_prov_example.svg Coquette_prov_example.dot
 
 
