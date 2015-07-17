@@ -100,8 +100,8 @@ digraph {
 	"Rrdfs:Class" [ label="rdfs:Class", shape = ellipse, color = blue ];
 
 	// Anonymous nodes
-	"B_:genid1" [ label="", shape = circle, color = green ];
-	"B_:genid2" [ label="", shape = circle, color = green ];
+	"B_:genid1" [ label="", shape = circle, color = green, width=0.75 ];
+	"B_:genid2" [ label="", shape = circle, color = green, width=0.75 ];
 
 	// Literals
 	"LRemi Harris" [ label="Remi Harris", shape = record ];

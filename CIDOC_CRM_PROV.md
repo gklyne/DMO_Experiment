@@ -250,5 +250,7 @@ Erlangen university have created an OWL version of CIDOC CRM, with online hyperl
 * rapper -i turtle -o dot Coquette_prov_example.ttl >Coquette_prov_example.dot
 * dot -Tpng -oCoquette_prov_example.png Coquette_prov_example.dot
 * dot -Tsvg -oCoquette_prov_example.svg Coquette_prov_example.dot
+* dot -Tpng -Gsize=24,12 -Gratio=compress -Ecolor=gray -Nwidth=3 -Nheight=0.75 -Nfixedsize=true -oCoquette_prov_example.png Coquette_prov_example.dot
+* dot -Tsvg -Gsize=24,12 -Gratio=compress -Ecolor=gray -Nwidth=3 -Nheight=0.75 -Nfixedsize=true -oCoquette_prov_example.svg Coquette_prov_example.dot
 
 
