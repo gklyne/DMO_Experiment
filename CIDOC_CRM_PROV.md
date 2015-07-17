@@ -52,9 +52,9 @@ Key high-level concepts in CRM include:
         * [cidoc:E28_Conceptual_Object](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-2048876791)
             * [cidoc:E73_Information_Object](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-1946407753)
 
-(The choice of key concepts here is somewhat arbitrary, and loosely follows the spirit if not the letter of the CRM Core vocabulary element selection.  It is based in part of past experience of terms used to capture descriptions of cultural objects.  The online CRM reference can be used to navigate to related relations and concepts: these terms provide some entry points for exploring the richness of CIDOC CRM.)
+(The choice of key concepts here is somewhat arbitrary, and loosely follows the spirit if not the letter of the CRM Core vocabulary element selection.  It is based in part on past experience of terms used to capture descriptions of cultural objects.  The online CRM reference can be used to navigate to related relations and concepts: these terms provide some entry points for exploring the richness of CIDOC CRM.)
 
-NOTE: in reviewing CIDOC CRM for this note, the most specific concept I can see covering musical performance (as opposed to maming a recording) appears to be E7 Activity.  Discuss.
+NOTE: in reviewing CIDOC CRM for this note, the most specific concept I can see covering musical performance (as opposed to making a recording) appears to be E7 Activity.  This is supported by [FRBRoo](http://www.cidoc-crm.org/frbr_inro.html), which models `frbr:F31_Performance` as a direct subclass of `cidoc:E7_Activity`.
 
 @@Example from musical performance - pick on Carolan performance
 
