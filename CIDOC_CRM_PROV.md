@@ -142,6 +142,8 @@ Example (using Turtle notation):
         .
 
 
+![Graphical view](https://raw.githubusercontent.com/gklyne/DMO_Experiment/master/Coquette_prov_example.svg)
+
 Notes:
 
 * `ex:Luthier` used here as both `prov:Role` and `rdfs:Class`.  I think this is OK.
@@ -231,5 +233,9 @@ Erlangen university have created an OWL version of CIDOC CRM, with online hyperl
 * P108 (URI has 'i', name does not)  (The CRM spec used to use different property names, e.g. P108_... and P108I_...)
 * E29 (typo after ISO)
 * Term hyperlinks appear to be auto-generated rather than based on the CRM term, which leads to a possibility that the hyperlinks may not be stable across different versons of the spec.
+
+### Graphing RDF data
+
+* http://rhizomik.net/html/redefer/rdf2svg-form/
 
 
