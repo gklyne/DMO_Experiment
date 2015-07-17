@@ -141,8 +141,11 @@ Example (using Turtle notation):
         rdfs:label "Guitar maker"
         .
 
+[(Graphical view)](https://rawgit.com/gklyne/DMO_Experiment/master/Coquette_prov_example.svg)
 
+<!--
 ![Graphical view](https://raw.githubusercontent.com/gklyne/DMO_Experiment/master/Coquette_prov_example.svg)
+-->
 
 Notes:
 
