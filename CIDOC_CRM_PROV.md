@@ -113,11 +113,11 @@ Example (using Turtle notation):
         .
     ex:Carolan_Guitar_production
         a prov:Activity ;
-        prov:wasAssociatedWith ex:NickPerez, ex:Steve_Benford ;
+        prov:wasAssociatedWith ex:Nick_Perez, ex:Steve_Benford ;
         prov:used ex:Reclaimed_Mahogany_pece, ex:Flamed_Maple_piece, ex:Spruce_piece ;
         prov:qualifiedAsscoiation [
             a prov:Association ;
-            prov:agent   ex:NickPerez ;
+            prov:agent   ex:Nick_Perez ;
             prov:hadRole ex:Luthier ;
             prov:hadPlan ex:Dreadnought_Guitar ;
             rdfs:seeAlso <http://carolanguitar.com/2014/08/11/dread/> ;
