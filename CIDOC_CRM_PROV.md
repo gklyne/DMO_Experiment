@@ -76,7 +76,77 @@ The goals of PROV are more modest than CRM, viz to capture details of the mechan
 
 There are several additional classes and relations defined by PROV that are mostly refinements of these core concepts, or structural elements used to help oirganize provenance descriptions.
 
-@@ Same example as above, using PROV
+Example (using Turtle notation):
+
+    @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix prov: <http://www.w3.org/ns/prov#> .
+    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+    @prefix ex:   <http://vocab.example.org/> .
+
+    ex:Coquette_performance
+        a ex:Performance, prov:Activity ;
+        prov:Used ex:Carolan_Guitar ;
+        prov:wasAssociatedWith ex:Remi_Harris ;
+        prov:qualifiedAsscoiation [
+            a prov:Association ;
+            prov:agent   ex:Remi_Harris ;
+            prov:hadRole ex:Performer ;
+            prov:hadPlan ex:Coquette_song ;
+            ] ;
+        rdfs:seeAlso <http://carolanguitar.com/2014/11/10/31-coquette/> ;
+        .
+    ex:Remi_Harris
+        a ex:Guitarist, prov:Person, prov:Agent, foaf:Person ;
+        foaf:name "Remi Harris" ;
+        rdfs:seeAlso <http://www.remiharris.co.uk> ;
+        .
+    ex:Coquette_song
+        a prov:Plan, prov:Entity ;
+        rdfs:label "Coquette" ;
+        rdfs:seeAlso <https://en.wikipedia.org/wiki/Coquette_(song)> ;
+        .
+    ex:Carolan_Guitar
+        a ex:Musical_instrument, prov:Entity ;
+        prov:wasGeneratedBy ex:Carolan_Guitar_production ;
+        rdfs:seeAlso <http://carolanguitar.com> ;
+        .
+    ex:Carolan_Guitar_production
+        a prov:Activity ;
+        prov:wasAssociatedWith ex:NickPerez, ex:Steve_Benford ;
+        prov:used ex:Reclaimed_Mahogany_pece, ex:Flamed_Maple_piece, ex:Spruce_piece ;
+        prov:qualifiedAsscoiation [
+            a prov:Association ;
+            prov:agent   ex:NickPerez ;
+            prov:hadRole ex:Luthier ;
+            prov:hadPlan ex:Dreadnought_Guitar ;
+            rdfs:seeAlso <http://carolanguitar.com/2014/08/11/dread/> ;
+            ] ;
+        .
+    ex:Nick_Perez
+        a ex:Luthier, ex:Guitarist, prov:Person, prov:Agent, foaf:Person ;
+        foaf:name "Nick Perez" ;
+        rdfs:seeAlso <http://www.nperezguitars.com> ;
+        .
+    ex:Performer
+        a prov:Role ;
+        rdfs:label "Player in a music performance"
+        .
+    ex:Guitarist
+        a prov:Role ;
+        rdfs:label "Guitarist"
+        .
+    ex:Luthier
+        a prov:Role, rdfs:Class ;
+        rdfs:label "Guitar maker"
+        .
+
+
+Notes:
+
+* `ex:Luthier` used here as both `prov:Role` and `rdfs:Class`.  I think this is OK.
+
+
 
 
 ## Using CIDOC CRM alongside PROV
@@ -135,7 +205,24 @@ PROV property               | CIDOC CRM encoding                                
 `prov:ActedOnBehalfOf`      |                                                                   | Agent-to-agent delegation of responsibility.  I've not yet identified an easy way to capture this in CIDOC CRM.  I imagine one could create a delegation event that captures the delegation of responsibility with respect to some other designated activity.  Overall, CIDOC CRM seems to be weak on the representation of agency other than directly by a person of group of people.
 
 
+## Inferences
+
+@@Add notes about inferences to make information available
+
+@@assume: subclass closure, subproperty closure
+
+@@implementation options: materialize inferred triples (forward chaining), logic programming/query rewriting (backward chaining)
+
+
 ## NOTES
+
+### See also FRBRoo
+
+* [Combined FRBRoo/CRM browser](http://erlangen-crm.org/docs/efrbroo/120131/)
+* [OWLDoc for FRBRoo](http://erlangen-crm.org/docs/efrbroo/120131/ontologies/120131___1327187983.html)
+* [OWLDoc for CIDOC CRM](http://erlangen-crm.org/docs/efrbroo/120131/ontologies/120111___1747105019.html) imported by OWLDoc FRBRoo.
+* [F31 performance](http://erlangen-crm.org/docs/efrbroo/120131/classes/F31Performance___1836504452.html) is subclass of E7 Activity.  (Ack. Terhi Nurmikko-Fuller for spotting this.)
+
 
 ### Erlangen bugs/oddities noted:
 
@@ -144,4 +231,5 @@ Erlangen university have created an OWL version of CIDOC CRM, with online hyperl
 * P108 (URI has 'i', name does not)  (The CRM spec used to use different property names, e.g. P108_... and P108I_...)
 * E29 (typo after ISO)
 * Term hyperlinks appear to be auto-generated rather than based on the CRM term, which leads to a possibility that the hyperlinks may not be stable across different versons of the spec.
+
 
