@@ -330,8 +330,7 @@ PROV property               | CIDOC CRM encoding        | Comment
 `prov:wasAssociatedWith`    | `prov:P14_carried_out_by`                                     |
 **Properties of `prov:Agent`** | | 
 `prov:ActedOnBehalfOf`      | | Agent-to-agent delegation of responsibility.  I've not yet identified an easy way to capture this in CIDOC CRM.  I imagine one could create a delegation event that captures the delegation of responsibility with respect to some other designated activity.  Overall, CIDOC CRM seems to be weak on the representation of agency other than directly by a person of group of people.
-
-**Other properties** | |
+**Other properties** | | 
 `prov:hadRole`              | | Agent role in specific activity.  This is not directly captured in CIDOC CRM (as presented in the Erlangen OWL implementation).  The nearest approach seems to be to use `crm:P2_has_type` applied to the agent entity, but that is less precise as it applies generally to the agent rather than to their role in a particular activity.  See also [How to model Roles in the CIDOC‐CRM RDF encoding](http://www.ics.forth.gr/isl/CRMext/Roles.pdf).
 
 
