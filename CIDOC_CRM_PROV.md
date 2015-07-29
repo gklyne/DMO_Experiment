@@ -158,7 +158,9 @@ Key high-level concepts in CRM include:
 
 (The choice of key concepts here is somewhat arbitrary, and loosely follows the spirit if not the letter of the CRM Core vocabulary element selection.  It is based in part on past experience of terms used to capture descriptions of cultural objects.  The online CRM reference can be used to navigate to related relations and concepts: these terms provide some entry points for exploring the richness of CIDOC CRM.)
 
+<!--
 NOTE: in reviewing CIDOC CRM for this note, the most specific concept I can see covering musical performance (as opposed to making a recording) appears to be E7 Activity.  This is supported by [FRBRoo](http://www.cidoc-crm.org/frbr_inro.html), which models `frbr:F31_Performance` as a direct subclass of `crm:E7_Activity`.
+-->
 
 Partial rework of previous example using CIDOC CRM and FRBROO extensions:
 
@@ -256,15 +258,15 @@ Partial rework of previous example using CIDOC CRM and FRBROO extensions:
         .
 
 
-This example also makes use of a CIDOC CRM extension _FRBROO_, which is a reconfiguration of the FRBR (Functional Requirements for Bibliographic Records) vocabulary around the CIDIOC CRM edvent module.
+This example also makes use of a CIDOC CRM extension _FRBROO_, which is a reconfiguration of the FRBR (Functional Requirements for Bibliographic Records) vocabulary around the CIDIOC CRM event module.
 
 This example raises two surprising observations:
 
-1. On its own, CIDOC CRM has no terms that capture the notion of a performance more precisely than some ind of activity.
+1. On its own, CIDOC CRM has no terms that capture the notion of a performance more precisely than some kind of activity.  [FRBRoo](http://www.cidoc-crm.org/frbr_inro.html) provides some extensions to the CRM, including a definition of `frbroo:F31_Performance` as a direct subclass of `crm:E7_Activity`.
 
-2. Compared with PROV, CIDOC CRM is very weak at describing details of production activities and performances, even when augmented with the FRBROO terms.  There is no established way to associate an agent with a role in an activity (though there is some discussion in [How to model Roles in the CIDOC‐CRM RDF encoding](http://www.ics.forth.gr/isl/CRMext/Roles.pdf)).
+2. Compared with PROV, CIDOC CRM is very weak at describing details of production activities and performances, even when augmented with the FRBROO terms.  There appears to be no single established way to associate an agent with a role in an activity (though there is some discussion in [How to model Roles in the CIDOC‐CRM RDF encoding](http://www.ics.forth.gr/isl/CRMext/Roles.pdf)).
 
-On the other hand, CIDOC CRM does seem to provide a more precise framework for describinbg the creation of artifacts.  PROV, by comparison, focuses very much on artifacts that are used and generated, and relies on extrernally defined terms to refine the nature of those artifacts.  (There is work related to PROV to describe putative activities in more general terms; e.g. [P-PLAN](http://vocab.linkeddata.es/p-plan/), [WfDesc](http://wf4ever.github.io/ro/#wfdesc), [OreChem](http://eprints.soton.ac.uk/179619/1/05693933.pdf), which might provide some of this framework.)
+On the other hand, CIDOC CRM does seem to provide a more precise framework for describing the creation of artifacts.  PROV, by comparison, focuses very much on how artifacts are used and generated, and relies on extrernally defined terms to refine the nature of those artifacts.  (There is work related to PROV to describe putative activities in more general terms; e.g. [P-PLAN](http://vocab.linkeddata.es/p-plan/), [WfDesc](http://wf4ever.github.io/ro/#wfdesc), [OreChem](http://eprints.soton.ac.uk/179619/1/05693933.pdf), which might provide some of this framework.)
 
 
 ## Using CIDOC CRM alongside PROV
