@@ -191,7 +191,8 @@ Partial rework of previous example using CIDOC CRM and FRBROO extensions:
         rdfs:seeAlso <https://en.wikipedia.org/wiki/Coquette_(song)> ;
         .
     ex:Carolan_Guitar
-        a ex:Musical_instrument, crm:E70_Thing, crm:E24_Physical_Man-Made_Thing  ;
+        a crm:E70_Thing, crm:E24_Physical_Man-Made_Thing, crm:E22_Man-Made_Object ;
+        crm:P2_has_type ex:Musical_instrument ;
         crm:P108i_was_produced_by ex:Carolan_Guitar_production ;
         rdfs:seeAlso <http://carolanguitar.com> ;
         .
@@ -219,6 +220,10 @@ Partial rework of previous example using CIDOC CRM and FRBROO extensions:
         foaf:name "Steve Benford" ;
         rdfs:seeAlso <https://www.nottingham.ac.uk/computerscience/people/steve.benford> ;
         .
+    ex:Musical_instrument
+        a crm:E55_type ;
+        rdfs:label "A musical instrument" ;
+        .   
     ex:Performer
         a crm:E55_type ;
         rdfs:label "Player in a music performance" ;
@@ -258,15 +263,15 @@ Partial rework of previous example using CIDOC CRM and FRBROO extensions:
         .
 
 
-This example also makes use of a CIDOC CRM extension _FRBROO_, which is a reconfiguration of the FRBR (Functional Requirements for Bibliographic Records) vocabulary around the CIDIOC CRM event module.
+This example also makes use of a CIDOC CRM extension FRBRoo, which is a reconfiguration of the FRBR (Functional Requirements for Bibliographic Records) vocabulary around the CIDOC CRM event model.  The modelling here introduces `crm:E55_type` values rather than new RDF classes for locally defined types, but either way should be workable.
 
 This example raises two surprising observations:
 
 1. On its own, CIDOC CRM has no terms that capture the notion of a performance more precisely than some kind of activity.  [FRBRoo](http://www.cidoc-crm.org/frbr_inro.html) provides some extensions to the CRM, including a definition of `frbroo:F31_Performance` as a direct subclass of `crm:E7_Activity`.
 
-2. Compared with PROV, CIDOC CRM is very weak at describing details of production activities and performances, even when augmented with the FRBROO terms.  There appears to be no single established way to associate an agent with a role in an activity (though there is some discussion in [How to model Roles in the CIDOC‐CRM RDF encoding](http://www.ics.forth.gr/isl/CRMext/Roles.pdf)).
+2. Compared with PROV, CIDOC CRM is very weak at describing details of production activities and performances, even when augmented with the FRBRoo terms.  There appears to be no single established way to associate an agent with a role in an activity (though there is some discussion in [How to model Roles in the CIDOC‐CRM RDF encoding](http://www.ics.forth.gr/isl/CRMext/Roles.pdf)).
 
-On the other hand, CIDOC CRM does seem to provide a more precise framework for describing the creation of artifacts.  PROV, by comparison, focuses very much on how artifacts are used and generated, and relies on extrernally defined terms to refine the nature of those artifacts.  (There is work related to PROV to describe putative activities in more general terms; e.g. [P-PLAN](http://vocab.linkeddata.es/p-plan/), [WfDesc](http://wf4ever.github.io/ro/#wfdesc), [OreChem](http://eprints.soton.ac.uk/179619/1/05693933.pdf), which might provide some of this framework.)
+On the other hand, CIDOC CRM does seem to provide a more precise framework for describing the creation of artifacts.  PROV, by comparison, focuses very much on how artifacts are used and generated, and relies on extrernally defined terms to refine the nature of those artifacts.  (There is work related to PROV to describe potential or planned activities in more general terms; e.g. [P-PLAN](http://vocab.linkeddata.es/p-plan/), [WfDesc](http://wf4ever.github.io/ro/#wfdesc), [OreChem](http://eprints.soton.ac.uk/179619/1/05693933.pdf), which might provide some of this framework.)
 
 
 ## Using CIDOC CRM alongside PROV
@@ -278,7 +283,7 @@ PROV class      | CIDOC CRM class       | Comment
 `prov:Entity`   | `crm:E70_Thing`     | Common sublasses used might be `crm:E22_Man-Made_Object` and `crm:E73_Information_Object`
 `prov:Activity` | `crm:E5_Event`      | `crm:E7_Activity` is subclass that further constrains to "actions intentionally carried out by instances of E39 Actor", which I would judge the appropriate mapping for a musical performance
 `prov:Agent`    | `crm:E39_Actor`     | The CIDOC CRM term here is specifically intended to refer to people, individuall or collectively.  I am not seeing an obvious candidate for software agents, which are also covered by the term `prov:Agent`:  `crm:E29_Design_or_Procedure` might be applicable for this, but is discouraged by the qualification "in particular [...] deliberate human activities that may result in the modification or production of instances of E24 Physical Thing".  The term `crm:E73_Information_Object` could apply, but is not so specific.
-`prov:Role`     | `crm:E55_type`      | The CIDOC CRM term is much less precise, in that it applies to a `crm:E1_CRM_Entity (via `crm:P2_has_type`) rather than more specifically to an agent, and is note scoped to a particular activity involving the agent.
+`prov:Role`     | `crm:E55_type`      | The CIDOC CRM term here is much less precise, in that it applies generally to a `crm:E1_CRM_Entity` (via `crm:P2_has_type`) rather than more specifically to an agent, and is not scoped to a particular activity involving the agent.
 
 
 Note, CIDOC CRM defines a number of intervening casses in the overall hierarchy:
@@ -327,7 +332,7 @@ PROV property               | CIDOC CRM encoding        | Comment
 `prov:ActedOnBehalfOf`      | | Agent-to-agent delegation of responsibility.  I've not yet identified an easy way to capture this in CIDOC CRM.  I imagine one could create a delegation event that captures the delegation of responsibility with respect to some other designated activity.  Overall, CIDOC CRM seems to be weak on the representation of agency other than directly by a person of group of people.
 
 **Other properties** | |
-`prov:hadRole`              | | Agent role in specific activity.  This is not directly captured in CIDOC CRM (as presented in the Erlangen OWL implementation).  The nearest approach seems to be to use `crm:P2_has_Type` applied to the agent entity, but that is less precise as it applies generally to the agent rather than to their role in a particular activity.  See also [How to model Roles in the CIDOC‐CRM RDF encoding](http://www.ics.forth.gr/isl/CRMext/Roles.pdf).
+`prov:hadRole`              | | Agent role in specific activity.  This is not directly captured in CIDOC CRM (as presented in the Erlangen OWL implementation).  The nearest approach seems to be to use `crm:P2_has_type` applied to the agent entity, but that is less precise as it applies generally to the agent rather than to their role in a particular activity.  See also [How to model Roles in the CIDOC‐CRM RDF encoding](http://www.ics.forth.gr/isl/CRMext/Roles.pdf).
 
 
 ### Inferences
@@ -351,7 +356,7 @@ For describing production events like the creation of the Carolan Guitar, CIDOC 
 ### See also FRBRoo
 
 * [Combined FRBRoo/CRM browser](http://erlangen-crm.org/docs/efrbroo/120131/)
-* [OWLDoc for FRBRoo](http://erlangen-crm.org/docs/efrbroo/120131/ontologies/120131___1327187983.html) and/or [http://erlangen-crm.org/docs/efrbroo/latest/]()
+* [OWLDoc for FRBRoo](http://erlangen-crm.org/docs/efrbroo/120131/ontologies/120131___1327187983.html) and/or [erlangen-crm.org/docs/efrbroo/latest/](http://erlangen-crm.org/docs/efrbroo/latest/)
 * [OWLDoc for CIDOC CRM](http://erlangen-crm.org/docs/efrbroo/120131/ontologies/120111___1747105019.html) imported by OWLDoc FRBRoo.
 * [F31 performance](http://erlangen-crm.org/docs/efrbroo/120131/classes/F31Performance___1836504452.html) is subclass of E7 Activity.  (Ack. Terhi Nurmikko-Fuller for spotting this.)
 
@@ -366,9 +371,13 @@ Erlangen university have created an OWL version of CIDOC CRM, with online hyperl
 
 ### Validating and graphing RDF data
 
-* http://rdf-translator.appspot.com
+Online services:
 
+* http://rdf-translator.appspot.com
 * http://rhizomik.net/html/redefer/rdf2svg-form/
+
+Using locally installed Redland and Graphviz software:
+
 * rapper -i turtle -o dot Coquette_prov_example.ttl | dot -Tpng -oCoquette_prov_example.png
 * rapper -i turtle -o dot Coquette_prov_example.ttl >Coquette_prov_example.dot
 * dot -Tpng -oCoquette_prov_example.png Coquette_prov_example.dot
