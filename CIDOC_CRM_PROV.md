@@ -348,7 +348,7 @@ PROV property               | CIDOC CRM encoding        | Comment
 
 For describing musical performances, where the roles of players, composers and others are key items of information, the PROV model seems more suitable than CIDOC CRM.
 
-For describing production events like the creation of the Carolan Guitar, CIDOC CRM seems to have some advantages, but again its weakness seems to be in describing the roles of the people involkved (who designed it? Who did various aspects of construction?).  In the case of the Carolan Guitar, a project in an academic setting with contributions by many people, the ability to acknowledge those contributors seems to be of central importance, so the PROV model again seems better suited.  It may be that, via the `prov:Entity >= crm:E70_Thing` or `prov:Entity >= crm:E24_Physical_Man-Made_Thing` crosswalk, it may be possible to incorporate some of the more precise CIDOC CRM terms applicable to artifact production.
+For describing production events like the creation of the Carolan Guitar, CIDOC CRM seems to have some advantages, but again its weakness seems to be in describing the roles of the people involkved (who designed it? Who did various aspects of construction?).  In the case of the Carolan Guitar, a project in an academic setting with contributions by many people, the ability to acknowledge those contributors seems to be of central importance, so the PROV model again seems better suited.  It may be that, via the `prov:Entity >= crm:E70_Thing` or `prov:Entity >= crm:E22_Man-Made_Object` crosswalk, it may be possible to incorporate some of the more precise CIDOC CRM terms applicable to artifact production.
 
 
 ## NOTES
