@@ -2,7 +2,7 @@
 
 ## Background
 
-I am looking at creating exploratory DMOs for the FAST project in a number of specific areas:
+I am looking at creating exploratory Digital Music Objects (DMOs) for the FAST project in a number of specific areas:
 
 * Capturing stories told by the Carolan Guitar (http://carolanguitar.com, http://www.nottingham.ac.uk/ComputerScience/Outreach/Carolan-Guitar.aspx)
 * Capturing information about performances (e.g. http://www.birminghamhippodrome.com/WhatsOn_focus.asp?showId=1817, http://demo.annalist.net/annalist/c/DMO_Experiment/d/)
@@ -13,7 +13,7 @@ A common theme that appears in these examples is _provenance_, which captures th
 1. CIDOC-CRM (http://www.cidoc-crm.org), an ISO-blessed standard for cultural heritage documentation, and
 2. W3C PROV (http://www.w3.org/TR/prov-overview/), a web standard that derives from requirements to capture information about the creation of digital artifacts.
 
-With their different backgrounds, CIDOC CRM and W3C PROV cover a lot of common ground, but extend that ground in different directions.  CIDOC CRM provides a rich and extensible framework for capturing quite subtle details about artifacts, events, people and other aspects of cultural heritage.  By comparison, PROV provides a basic set of concepts that are designed to be combined with other metadata standards to capture information about how an artifact was produced.  A key difference is that the W3C PROV information is intended to represent a definitive set of observations about how an artifact came to exist, usable directly as supporting evidence for some claim, where culural heritage provenance may be a matter of opinion and legitimately exist in contradictory versions.
+With their different backgrounds, CIDOC CRM and W3C PROV cover a lot of common ground, but extend that ground in different directions.  CIDOC CRM provides a rich and extensible framework for capturing quite subtle details about artifacts, events, people and other aspects of cultural heritage.  By comparison, PROV provides a basic set of concepts that are designed to be combined with other metadata standards to capture information about how an artifact was produced.  A key difference is that the W3C PROV information is intended to represent a definitive set of observations about how an artifact came to exist, usable directly as supporting evidence for some claim, where culural heritage provenance may be a matter of opinion and may legitimately exist in contradictory versions.
 
 On a cursory examination of the use-cases, it appears to me that:
 
@@ -353,7 +353,7 @@ For describing production events like the creation of the Carolan Guitar, CIDOC 
 
 ## NOTES
 
-### See also FRBRoo
+### FRBRoo terms
 
 * [Combined FRBRoo/CRM browser](http://erlangen-crm.org/docs/efrbroo/120131/)
 * [OWLDoc for FRBRoo](http://erlangen-crm.org/docs/efrbroo/120131/ontologies/120131___1327187983.html) and/or [erlangen-crm.org/docs/efrbroo/latest/](http://erlangen-crm.org/docs/efrbroo/latest/)
@@ -368,6 +368,7 @@ Erlangen university have created an OWL version of CIDOC CRM, with online hyperl
 * P108 (URI has 'i', name does not)  (The CRM spec used to use different property names, e.g. P108_... and P108I_...)
 * E29 (typo after ISO)
 * Term hyperlinks appear to be auto-generated rather than based on the CRM term, which leads to a possibility that the hyperlinks may not be stable across different versons of the spec.
+
 
 ### Validating and graphing RDF data
 
