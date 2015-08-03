@@ -327,7 +327,7 @@ PROV property               | CIDOC CRM encoding        | Comment
 `prov:wasInformedBy`        | `crm:P16_used_specific_object` / `crm:P108i_was_produced_by`  | Activity-to-activity propagation (cf. `prov:wasDevivedFrom`)
 `prov:startedAtTime`        | `crm:P4_has_time-span`                                        | The `crm:E52_Time-Span` time-span encompases start and end times, and the methods for specificating it are quite open.  In previous implementation work, I've introduced additional properties of `crm:E52_Time-Span` taking ISO8601/RFC3999 literal values to define a period specifically, which can be used alongside (say) `crm:P78_is_identified_by`
 `prov:endedAtTime`          | `crm:P4_has_time-span`                                        | (see `prov:startedAtTime`)
-`prov:wasAssociatedWith`    | `prov:P14_carried_out_by`                                     |
+`prov:wasAssociatedWith`    | `crm:P14_carried_out_by`                                     |
 **Properties of `prov:Agent`** | | 
 `prov:ActedOnBehalfOf`      | | Agent-to-agent delegation of responsibility.  I've not yet identified an easy way to capture this in CIDOC CRM.  I imagine one could create a delegation event that captures the delegation of responsibility with respect to some other designated activity.  Overall, CIDOC CRM seems to be weak on the representation of agency other than directly by a person of group of people.
 **Other properties** | | 
