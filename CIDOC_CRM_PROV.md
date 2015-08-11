@@ -363,7 +363,7 @@ PROV does not directly provide for use of an unspecified sample of some material
     _:MakeGuitar a prov:Activity ; 
         prov:used ex:Spruce .
 
-we can run into a modelling problem when we look at more than one construction activity (using an abbreviated form of the above two statements (see [Nesting Unlabeled Blank Nodes in Turtle](http://www.w3.org/TR/turtle/#unlabeled-bnodes)):
+we can run into a modelling problem when we look at more than one construction activity (using an abbreviated form of the above two statements; see [Nesting Unlabeled Blank Nodes in Turtle](http://www.w3.org/TR/turtle/#unlabeled-bnodes)):
 
     ex:Guitar_1 prov:wasGeneratedBy 
         [ a prov:Activity ; prov:used ex:Spruce ] .
@@ -371,7 +371,7 @@ we can run into a modelling problem when we look at more than one construction a
     ex:Guitar_2
         [ a prov:Activity ; prov:used ex:Spruce ] .
 
-In this example, what we are actually saying (according to the semantics of PROV and RDF) is that both of `ex:Guitar_1` and `ex:Guitar_2` were made using the *same piece* of Spruce.  This problem can be avoided by intrudicing an RDF blank node to represent the piece of spruce, and using the term ex:Spruce to denote the generic material rather than a specific entity:
+In this example, what we are actually saying (according to the semantics of PROV and RDF) is that both of `ex:Guitar_1` and `ex:Guitar_2` were made using the *same piece* of Spruce.  This problem can be avoided by introducing an RDF blank node to represent the piece of spruce, and using the term `ex:Spruce` to denote the generic material rather than a specific entity:
 
     ex:Guitar prov:wasGeneratedBy
       [ a prov:Activity ;
@@ -390,7 +390,13 @@ CRM overcomes this by having separate properties for referencing specific entiti
         crm:P126_employed
             ex:Reclaimed_Mahogany, ex:Flamed_Maple, ex:Spruce ;
 
-This suggests a possible use of the CRM term to be understood as equivalent to introducing an RDF blank node, thus:
+This suggests a possible use of the CRM term `crm:P126_employed` to be understood as equivalent to introducing an RDF blank node, thus:
+
+    ex:Carolan_Guitar_production
+        a prov:Activity ;
+        crm:P126_employed ex:Spruce .
+
+would be equivalent to:
 
     ex:Carolan_Guitar_production
         a prov:Activity ;
@@ -399,7 +405,7 @@ This suggests a possible use of the CRM term to be understood as equivalent to i
             crm:P45_consists_of ex:Spruce
           ] .
 
-Which, consistent with the table above, would be generally equivalent to:
+Which, consistent with the table above, would convey the CRM usage:
 
     ex:Carolan_Guitar_production
         a crm:E7_Activity, crm:E12_Production ;
@@ -408,7 +414,7 @@ Which, consistent with the table above, would be generally equivalent to:
             crm:P45_consists_of ex:Spruce
           ] .
 
-Thus we can extend the table to include:
+We can now extend the table above to include:
 
 PROV property               | CIDOC CRM encoding        | Comment
 -------------               | ------------------        | -------
