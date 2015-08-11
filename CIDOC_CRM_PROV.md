@@ -1,5 +1,7 @@
 # Combining CIDOC CRM with W3C PROV data
 
+This file contains notes about using W3C PROV with CIDOC CRM for representing the Carolan Guitar's story.  Initially, I look at the overall process description (provenance) options. Later, I look at some more detailed modellimng issues.
+
 ## Background
 
 I am looking at creating exploratory Digital Music Objects (DMOs) for the FAST project in a number of specific areas:
@@ -348,6 +350,70 @@ PROV property               | CIDOC CRM encoding        | Comment
 For describing musical performances, where the roles of players, composers and others are key items of information, the PROV model seems more suitable than CIDOC CRM.
 
 For describing production events like the creation of the Carolan Guitar, CIDOC CRM seems to have some advantages, but again its weakness seems to be in describing the roles of the people involkved (who designed it? Who did various aspects of construction?).  In the case of the Carolan Guitar, a project in an academic setting with contributions by many people, the ability to acknowledge those contributors seems to be of central importance, so the PROV model again seems better suited.  It may be that, via the `prov:Entity >= crm:E70_Thing` or `prov:Entity >= crm:E22_Man-Made_Object` crosswalk, it may be possible to incorporate some of the more precise CIDOC CRM terms applicable to artifact production.
+
+
+## Artifacts and materials
+
+Having made the decision to use W3C PROV for the basic process modelling structure, an issue arises with the use of materials in a construction process.
+
+PROV does not directly provide for use of an unspecified sample of some material as opposed to a specific sample.  If we attempt to use a generic material type, e.g. "Spruce", as the object of a `prov:Used` statrement, thus:
+
+    ex:Guitar prov:wasGeneratedBy _:MakeGuitar .
+    
+    _:MakeGuitar a prov:Activity ; 
+        prov:used ex:Spruce .
+
+we can run into a modelling problem when we look at more than one construction activity (using an abbreviated form of the above two statements (see [Nesting Unlabeled Blank Nodes in Turtle](http://www.w3.org/TR/turtle/#unlabeled-bnodes)):
+
+    ex:Guitar_1 prov:wasGeneratedBy 
+        [ a prov:Activity ; prov:used ex:Spruce ] .
+        
+    ex:Guitar_2
+        [ a prov:Activity ; prov:used ex:Spruce ] .
+
+In this example, what we are actually saying (according to the semantics of PROV and RDF) is that both of `ex:Guitar_1` and `ex:Guitar_2` were made using the *same piece* of Spruce.  This problem can be avoided by intrudicing an RDF blank node to represent the piece of spruce, and using the term ex:Spruce to denote the generic material rather than a specific entity:
+
+    ex:Guitar prov:wasGeneratedBy
+      [ a prov:Activity ;
+        prov:used
+          [ a prov:Entity ;
+            ex:consistsOf ex:Spruce 
+          ]
+      ] .
+
+CRM overcomes this by having separate properties for referencing specific entities and generic materials, which can be seen in the `Carolan_Guitar_production` example above, the salient parts of which are:
+
+    ex:Carolan_Guitar_production
+        a crm:E7_Activity, crm:E12_Production ;
+        crm:P16_used_specific_object
+            ex:Reclaimed_Mahogany_piece, ex:Flamed_Maple_piece, ex:Spruce_piece ;
+        crm:P126_employed
+            ex:Reclaimed_Mahogany, ex:Flamed_Maple, ex:Spruce ;
+
+This suggests a possible use of the CRM term to be understood as equivalent to introducing an RDF blank node, thus:
+
+    ex:Carolan_Guitar_production
+        a prov:Activity ;
+        prov:used
+          [ a prov:Entity ;
+            crm:P45_consists_of ex:Spruce
+          ] .
+
+Which, consistent with the table above, would be generally equivalent to:
+
+    ex:Carolan_Guitar_production
+        a crm:E7_Activity, crm:E12_Production ;
+        crm:P16_used_specific_object
+          [ a crm:E18_Physical_Thing ;
+            crm:P45_consists_of ex:Spruce
+          ] .
+
+Thus we can extend the table to include:
+
+PROV property               | CIDOC CRM encoding        | Comment
+-------------               | ------------------        | -------
+**Properties of `prov:Activity`** | | 
+`prov:used` / `crm:P45_consists_of` | `crm:P126_employed`
 
 
 ## NOTES
