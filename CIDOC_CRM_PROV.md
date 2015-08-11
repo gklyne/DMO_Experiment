@@ -450,7 +450,7 @@ Erlangen university have created an OWL version of CIDOC CRM, with online hyperl
 * P108 (URI has 'i', name does not)  (The CRM spec used to use different property names, e.g. P108_... and P108I_...)
 * E29 (typo after ISO)
 * Term hyperlinks appear to be auto-generated rather than based on the CRM term, which leads to a possibility that the hyperlinks may not be stable across different versons of the spec.
-* [P45_consists_of](http://erlangen-crm.org/docs/ecrm/current/#anchor-2135682683) and its inverse do not follow the convention of adding an "i" after the property number that is used by other property inverses.
+* [P45_consists_of](http://erlangen-crm.org/docs/ecrm/current/#anchor-2135682683) and its inverse do not follow the convention of adding an "i" after the property number that is used by other property inverses.  (Later) the convention appears to be followed in the URIs, but not in the property names in the text or hyperlinks.
 
 
 ### Validating and graphing RDF data
