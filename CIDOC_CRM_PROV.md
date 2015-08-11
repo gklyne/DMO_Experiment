@@ -419,7 +419,7 @@ We can now extend the table above to include:
 PROV property               | CIDOC CRM encoding        | Comment
 -------------               | ------------------        | -------
 **Properties of `prov:Activity`** | | 
-`prov:used` / `crm:P45_consists_of` | `crm:P126_employed`
+`prov:used` / `crm:P45_consists_of` | `crm:P126_employed` | using `crm:P126_employed` avoids having to explicitly mention a blank node or named entity;  rather, the existence of some such entity is implied by the semantics.
 
 
 ## NOTES
