@@ -423,15 +423,15 @@ PROV property               | CIDOC CRM encoding        | Comment
 
 Also note the class `crm:E57_Material` which is part of the following CRM class hierarchy:
 
-* [crm:E1_CRM_Entity](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor-1065313978)
-  * [crm:E77_Persistent_Item](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor905215856)
-    * [crm:E70_Thing](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor-1377140420)
-      * [crm:E71_Man-Made_Thing](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor120317510)
-        * [crm:E28_Conceptual_Object](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor-1169170047)
-          * [crm:E55_Type](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor1371772387)
-            * [crm:E57_Material](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor429455630)
+* [crm:E1_CRM_Entity](http://erlangen-crm.org/docs/ecrm/current/#anchor-2008326450)
+  * [crm:E77_Persistent_Item](http://erlangen-crm.org/docs/ecrm/current/#anchor-1004077320)
+    * [crm:E70_Thing](http://erlangen-crm.org/docs/ecrm/current/#anchor1522879172)
+      * [crm:E71_Man-Made_Thing](http://erlangen-crm.org/docs/ecrm/current/#anchor-1603840578)
+        * [crm:E28_Conceptual_Object](http://erlangen-crm.org/docs/ecrm/current/#anchor-2048876791)
+          * [crm:E55_Type](http://erlangen-crm.org/docs/ecrm/current/#anchor-1859814565)
+            * [crm:E57_Material](http://erlangen-crm.org/docs/ecrm/current/#anchor1645961862)
 
-Note that the "discrete, identifiable, instance" here associated with `crm:E70_Thing` is not a physical object but the concept of the material concerned.  As such it is distinct from `crm:E24_Physical_Man-Made_Thing` of which the guitar is an instance, and from `crm:E18_Physical_Thing` of which any physical sample of the material is an instance (cf. `crm:P45_consists_of`).
+Note that the "discrete, identifiable, instance" here associated with `crm:E70_Thing` is not a physical object but the concept of the material concerned.  As such it is distinct from `crm:E24_Physical_Man-Made_Thing` of which the guitar is an instance, and from `crm:E18_Physical_Thing` of which any physical sample of the material is an instance (cf. [crm:P45_consists_of](http://erlangen-crm.org/docs/ecrm/current/#anchor-2135682683)).
 
 ## NOTES
 
@@ -450,6 +450,7 @@ Erlangen university have created an OWL version of CIDOC CRM, with online hyperl
 * P108 (URI has 'i', name does not)  (The CRM spec used to use different property names, e.g. P108_... and P108I_...)
 * E29 (typo after ISO)
 * Term hyperlinks appear to be auto-generated rather than based on the CRM term, which leads to a possibility that the hyperlinks may not be stable across different versons of the spec.
+* [P45_consists_of](http://erlangen-crm.org/docs/ecrm/current/#anchor-2135682683) and its inverse do not follow the convention of adding an "i" after the property number that is used by other property inverses.
 
 
 ### Validating and graphing RDF data
