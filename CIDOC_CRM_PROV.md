@@ -419,8 +419,19 @@ We can now extend the table above to include:
 PROV property               | CIDOC CRM encoding        | Comment
 -------------               | ------------------        | -------
 **Properties of `prov:Activity`** | | 
-`prov:used` / `crm:P45_consists_of` | `crm:P126_employed` | using `crm:P126_employed` avoids having to explicitly mention a blank node or named entity;  rather, the existence of some such entity is implied by the semantics.
+`prov:used` / `crm:P45_consists_of` | `crm:P126_employed` | Using `crm:P126_employed` avoids having to explicitly mention a blank node or named entity;  rather, the existence of some such entity is implied by the semantics.
 
+Also note the class `crm:E57_Material` which is part of the following CRM class hierarchy:
+
+* [crm:E1_CRM_Entity](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor-1065313978)
+  * [crm:E77_Persistent_Item](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor905215856)
+    * [crm:E70_Thing](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor-1377140420)
+      * [crm:E71_Man-Made_Thing](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor120317510)
+        * [crm:E28_Conceptual_Object](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor-1169170047)
+          * [crm:E55_Type](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor1371772387)
+            * [crm:E57_Material](http://erlangen-crm.org/docs/ecrm/150218/index.html#anchor429455630)
+
+Note that the "discrete, identifiable, instance" here associated with `crm:E70_Thing` is not a physical object but the concept of the material concerned.  As such it is distinct from `crm:E24_Physical_Man-Made_Thing` of which the guitar is an instance, and from `crm:E18_Physical_Thing` of which any physical sample of the material is an instance (cf. `crm:P45_consists_of`).
 
 ## NOTES
 
