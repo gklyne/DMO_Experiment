@@ -3,12 +3,12 @@
   "rdfs:comment": "Conductor of Mariinsky Opera",
   "dmo:links": [
     {
-      "dmo:role": "wikipedia",
-      "dmo:link": "http://en.wikipedia.org/wiki/Valery_Gergiev"
+      "dmo:link": "http://en.wikipedia.org/wiki/Valery_Gergiev",
+      "dmo:role": "wikipedia"
     }
   ],
   "annal:type_id": "Performer",
-  "annal:url": "/annalist/c/DMO_Experiment/d/Performer/valery_gergiev/",
+  "dmo:isni": "0000000114710052",
   "dmo:performer_role": "Conductor",
   "annal:id": "valery_gergiev",
   "@id": "./",
