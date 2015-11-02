@@ -1,0 +1,24 @@
+{
+  "rdfs:label": "ISNI",
+  "rdfs:comment": "Intentional Standard Name Identifier",
+  "annal:group_ref": "",
+  "annal:type_id": "_field",
+  "annal:placeholder": "(ISNI - 16 digits)",
+  "annal:property_uri": "dmo:isni",
+  "annal:field_ref_type": "",
+  "annal:field_entity_type": "",
+  "@id": "./",
+  "annal:repeat_label_delete": "",
+  "annal:field_ref_restriction": "",
+  "annal:field_placement": "small:0,12",
+  "annal:repeat_label_add": "",
+  "annal:default_value": "",
+  "annal:field_value_type": "annal:Identifier",
+  "annal:field_render_type": "Text",
+  "annal:field_ref_field": "",
+  "annal:id": "isni",
+  "@type": [
+    "annal:Field"
+  ],
+  "annal:type": "annal:Field"
+}
