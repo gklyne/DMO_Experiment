@@ -295,7 +295,8 @@ Note, CIDOC CRM defines a number of intervening casses in the overall hierarchy:
         * [crm:E4_Period](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-1061023960)
             * [crm:E5_Event](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-680408142)
                 * [crm:E7_Activity](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-121262637)
-                    * _with several refinements of activity_
+                    * [crm:E12_Production](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-432649927)
+                    * _and several other refinements of activity_
     * [crm:E52_Time-Span](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-811589756)
     * [crm:E53_Place](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor696186594)
     * [crm:E77_Persistent_Item](http://erlangen-crm.org/docs/ecrm/current/index.html#anchor-1004077320)

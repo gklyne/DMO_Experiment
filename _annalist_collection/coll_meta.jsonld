@@ -1,10 +1,10 @@
 {
   "rdfs:label": "Experimental Digital Music Object",
   "rdfs:comment": "",
+  "annal:software_version": "0.1.16",
   "annal:type_id": "_collection",
-  "annal:url": "/annalist/c/TransformingMusicology/",
   "annal:default_list": "Event_list",
-  "annal:id": "TransformingMusicology",
+  "annal:id": "DMO_Experiment",
   "@id": "../",
   "@type": [
     "annal:Collection"
